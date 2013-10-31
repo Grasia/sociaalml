@@ -23,7 +23,7 @@
   <scm>
     <connection>scm:git:git://git.code.sf.net/p/sociaal/codegit</connection>
     <developerConnection>scm:git:ssh://pcampillo@git.code.sf.net/p/sociaal/codegit</developerConnection>
-    <url>https://sourceforge.net/p/sociaal/codegit/ref/master/tree</url>
+    <url>https://sourceforge.net/p/sociaal/codegit/ci/master/tree/</url>
   </scm>
   <developers>
     <developer>
