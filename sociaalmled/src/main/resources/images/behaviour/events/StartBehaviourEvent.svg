@@ -14,7 +14,7 @@
    id="svg3041"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="event.svg">
+   sodipodi:docname="StartBehaviourEvent.svg">
   <defs
      id="defs3043" />
   <sodipodi:namedview
@@ -52,11 +52,18 @@
      id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer">
+    <path
+       style="fill:#008000;stroke:#008000;stroke-width:0.86248672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 12.320009,7.4450746 0,17.6613994 12.751532,-9.360542 z"
+       id="path3004"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
     <g
+       transform="translate(4.321276e-7,0.08190873)"
        id="g2998">
       <path
          transform="translate(0.45050061,-0.40954601)"
-         d="m 30.388313,16.437252 a 14.825565,14.825565 0 1 1 -29.65113038,0 14.825565,14.825565 0 1 1 29.65113038,0 z"
+         d="m 30.388313,16.437252 c 0,8.187934 -6.637631,14.825565 -14.825565,14.825565 -8.1879337,0 -14.82556538,-6.637631 -14.82556538,-14.825565 0,-8.1879336 6.63763168,-14.8255653 14.82556538,-14.8255653 8.187934,0 14.825565,6.6376317 14.825565,14.8255653 z"
          sodipodi:ry="14.825565"
          sodipodi:rx="14.825565"
          sodipodi:cy="16.437252"
