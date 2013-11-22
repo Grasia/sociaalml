@@ -3,7 +3,7 @@
 <projectproperties>
 <projectproperty id="extfolder" module="IDK"  name="Extension Module Folder" value="ext"  tooltip="Folder where the IDE will find its new modules" />
 <projectproperty id="htmldoc" module="HTML Document generator"  name="HTML document folder" value="html"  tooltip="The document folder that will contain HTML version of this specification" />
- <openeddiagram>GenericDiseaseProfile</openeddiagram> <openeddiagram>eGenericDiseaseProfile</openeddiagram></projectproperties>
+ <openeddiagram>SocialNetworkMM</openeddiagram> <openeddiagram>eSocialProfileDiagram</openeddiagram></projectproperties>
 <leafpackages>
    <path>
     <package id="Project"/>
@@ -1631,7 +1631,7 @@
 <objectproperty id="Properties" collection="true">
 </objectproperty>
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">The diagram is pretty similar to the Parkinson&apos;s Disease diagram but it has some fields more opened.It is used to model any disease: the stage, the medication, symptoms and limitations.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -5375,6 +5375,36 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="Parents" type="ingenias.editor.entities.MetaRelationship">
+<objectproperty id="BasicRepresentations">
+</objectproperty>
+<objectproperty id="PreferredOrder" collection="true">
+</objectproperty>
+<objectproperty id="Properties" collection="true">
+</objectproperty>
+<objectproperty id="VisualRepresentations" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="Recommendation"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="Bosses" type="ingenias.editor.entities.MetaRelationship">
+<objectproperty id="BasicRepresentations">
+</objectproperty>
+<objectproperty id="PreferredOrder" collection="true">
+</objectproperty>
+<objectproperty id="Properties" collection="true">
+</objectproperty>
+<objectproperty id="VisualRepresentations" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="Recommendation"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="SRoomMR" type="ingenias.editor.entities.MetaRole">
 <objectproperty id="PreferredOrder" collection="true">
 </objectproperty>
@@ -7129,7 +7159,7 @@
 <objectproperty id="Properties" collection="true">
 </objectproperty>
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">The diagram is pretty similar to the Parkinson&apos;s Disease diagram but it has some fields more opened.It is used to model any disease: the stage, the medication, symptoms and limitations.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -8053,7 +8083,7 @@
 <objectproperty id="Properties" collection="true">
 </objectproperty>
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">The diagram is pretty similar to the Parkinson&apos;s Disease diagram but it has some fields more opened.It is used to model any disease: the stage, the medication, symptoms and limitations.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -14089,40 +14119,6 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="560" type="ingenias.editor.entities.Contains">
-<object id="560" type="ingenias.editor.entities.Contains">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="Limitations" class="ingenias.editor.entities.MetaRelationship" roleName="Containstarget" type="ingenias.editor.entities.ContainstargetRole" dgcid="1359120878">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericDiseaseSpecDiag" class="ingenias.editor.entities.MetaDiagram" roleName="Containssource" type="ingenias.editor.entities.ContainssourceRole" dgcid="239053784">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="562" type="ingenias.editor.entities.Contains">
-<object id="562" type="ingenias.editor.entities.Contains">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="MEDIUMTaskFilterR" class="ingenias.editor.entities.MetaObject" roleName="Containstarget" type="ingenias.editor.entities.ContainstargetRole" dgcid="1706290577">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericDiseaseSpecDiag" class="ingenias.editor.entities.MetaDiagram" roleName="Containssource" type="ingenias.editor.entities.ContainssourceRole" dgcid="239053784">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
 <relationship id="383" type="ingenias.editor.entities.AssociationEnd">
 <object id="383" type="ingenias.editor.entities.AssociationEnd">
 <mapproperties>
@@ -14161,23 +14157,6 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="561" type="ingenias.editor.entities.Contains">
-<object id="561" type="ingenias.editor.entities.Contains">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="LOWTaskFilterR" class="ingenias.editor.entities.MetaObject" roleName="Containstarget" type="ingenias.editor.entities.ContainstargetRole" dgcid="427514338">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericDiseaseSpecDiag" class="ingenias.editor.entities.MetaDiagram" roleName="Containssource" type="ingenias.editor.entities.ContainssourceRole" dgcid="239053784">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
 <relationship id="313" type="ingenias.editor.entities.InheritsO">
 <object id="313" type="ingenias.editor.entities.InheritsO">
 <mapproperties>
@@ -14207,23 +14186,6 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role><role idEntity="GDiseaseLevelField" class="ingenias.editor.entities.PropertyField" roleName="Hastarget" type="ingenias.editor.entities.HastargetRole" dgcid="1104789701">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="563" type="ingenias.editor.entities.Contains">
-<object id="563" type="ingenias.editor.entities.Contains">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="HIGHTaskFilterR" class="ingenias.editor.entities.MetaObject" roleName="Containstarget" type="ingenias.editor.entities.ContainstargetRole" dgcid="2056001063">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericDiseaseSpecDiag" class="ingenias.editor.entities.MetaDiagram" roleName="Containssource" type="ingenias.editor.entities.ContainssourceRole" dgcid="239053784">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -14635,8 +14597,8 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="573" type="ingenias.editor.entities.AssociationEnd">
-<object id="573" type="ingenias.editor.entities.AssociationEnd">
+<relationship id="197" type="ingenias.editor.entities.AssociationEnd">
+<object id="197" type="ingenias.editor.entities.AssociationEnd">
 <mapproperties>
 <key id="MaxCardinality">N</key>
 <key id="MinCardinality">1</key>
@@ -14645,7 +14607,171 @@
 <key id="SourceOrTarget">target</key>
 </mapproperties>
 </object>
-<role idEntity="CaregiverOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="626077030">
+<role idEntity="Bosses" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="173512177">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialTargetMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="2011220099">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="196" type="ingenias.editor.entities.AssociationEnd">
+<object id="196" type="ingenias.editor.entities.AssociationEnd">
+<mapproperties>
+<key id="MaxCardinality">1</key>
+<key id="MinCardinality">1</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Label"></key>
+<key id="SourceOrTarget">source</key>
+</mapproperties>
+</object>
+<role idEntity="SocialSourceMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="1961452200">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Bosses" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="173512177">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="194" type="ingenias.editor.entities.AssociationEnd">
+<object id="194" type="ingenias.editor.entities.AssociationEnd">
+<mapproperties>
+<key id="MaxCardinality">2</key>
+<key id="MinCardinality">1</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Label"></key>
+<key id="SourceOrTarget">target</key>
+</mapproperties>
+</object>
+<role idEntity="SocialTargetMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="2011220099">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Parents" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="805716879">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="517" type="ingenias.editor.entities.PlayedBy">
+<object id="517" type="ingenias.editor.entities.PlayedBy">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Human" class="ingenias.editor.entities.MetaObject" roleName="PlayedBytarget" type="ingenias.editor.entities.PlayedBytargetRole" dgcid="1047878951">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialTargetMR" class="ingenias.editor.entities.MetaRole" roleName="PlayedBysource" type="ingenias.editor.entities.PlayedBysourceRole" dgcid="2011220099">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="521" type="ingenias.editor.entities.AssociationEnd">
+<object id="521" type="ingenias.editor.entities.AssociationEnd">
+<mapproperties>
+<key id="MaxCardinality">1</key>
+<key id="MinCardinality">1</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Label"></key>
+<key id="SourceOrTarget">source</key>
+</mapproperties>
+</object>
+<role idEntity="WifeOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="1861077699">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialSourceMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="1961452200">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="520" type="ingenias.editor.entities.AssociationEnd">
+<object id="520" type="ingenias.editor.entities.AssociationEnd">
+<mapproperties>
+<key id="MaxCardinality">1</key>
+<key id="MinCardinality">1</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Label"></key>
+<key id="SourceOrTarget">target</key>
+</mapproperties>
+</object>
+<role idEntity="HusbandOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="144971061">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialTargetMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="2011220099">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="519" type="ingenias.editor.entities.AssociationEnd">
+<object id="519" type="ingenias.editor.entities.AssociationEnd">
+<mapproperties>
+<key id="MaxCardinality">1</key>
+<key id="MinCardinality">1</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Label"></key>
+<key id="SourceOrTarget">source</key>
+</mapproperties>
+</object>
+<role idEntity="SocialSourceMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="1961452200">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="HusbandOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="144971061">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="572" type="ingenias.editor.entities.AssociationEnd">
+<object id="572" type="ingenias.editor.entities.AssociationEnd">
+<mapproperties>
+<key id="MaxCardinality">1</key>
+<key id="MinCardinality">1</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Label"></key>
+<key id="SourceOrTarget">source</key>
+</mapproperties>
+</object>
+<role idEntity="SocialSourceMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="1961452200">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="CaregiverOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="626077030">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="522" type="ingenias.editor.entities.AssociationEnd">
+<object id="522" type="ingenias.editor.entities.AssociationEnd">
+<mapproperties>
+<key id="MaxCardinality">1</key>
+<key id="MinCardinality">1</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Label"></key>
+<key id="SourceOrTarget">target</key>
+</mapproperties>
+</object>
+<role idEntity="WifeOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="1861077699">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -14673,17 +14799,17 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="522" type="ingenias.editor.entities.AssociationEnd">
-<object id="522" type="ingenias.editor.entities.AssociationEnd">
+<relationship id="573" type="ingenias.editor.entities.AssociationEnd">
+<object id="573" type="ingenias.editor.entities.AssociationEnd">
 <mapproperties>
-<key id="MaxCardinality">1</key>
+<key id="MaxCardinality">N</key>
 <key id="MinCardinality">1</key>
 <key id="_view_type">INGENIAS</key>
 <key id="Label"></key>
 <key id="SourceOrTarget">target</key>
 </mapproperties>
 </object>
-<role idEntity="WifeOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="1861077699">
+<role idEntity="CaregiverOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="626077030">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -14694,8 +14820,8 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="572" type="ingenias.editor.entities.AssociationEnd">
-<object id="572" type="ingenias.editor.entities.AssociationEnd">
+<relationship id="193" type="ingenias.editor.entities.AssociationEnd">
+<object id="193" type="ingenias.editor.entities.AssociationEnd">
 <mapproperties>
 <key id="MaxCardinality">1</key>
 <key id="MinCardinality">1</key>
@@ -14709,87 +14835,7 @@
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
-</role><role idEntity="CaregiverOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="626077030">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="519" type="ingenias.editor.entities.AssociationEnd">
-<object id="519" type="ingenias.editor.entities.AssociationEnd">
-<mapproperties>
-<key id="MaxCardinality">1</key>
-<key id="MinCardinality">1</key>
-<key id="_view_type">INGENIAS</key>
-<key id="Label"></key>
-<key id="SourceOrTarget">source</key>
-</mapproperties>
-</object>
-<role idEntity="SocialSourceMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="1961452200">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="HusbandOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="144971061">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="520" type="ingenias.editor.entities.AssociationEnd">
-<object id="520" type="ingenias.editor.entities.AssociationEnd">
-<mapproperties>
-<key id="MaxCardinality">1</key>
-<key id="MinCardinality">1</key>
-<key id="_view_type">INGENIAS</key>
-<key id="Label"></key>
-<key id="SourceOrTarget">target</key>
-</mapproperties>
-</object>
-<role idEntity="HusbandOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="144971061">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="SocialTargetMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="2011220099">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="521" type="ingenias.editor.entities.AssociationEnd">
-<object id="521" type="ingenias.editor.entities.AssociationEnd">
-<mapproperties>
-<key id="MaxCardinality">1</key>
-<key id="MinCardinality">1</key>
-<key id="_view_type">INGENIAS</key>
-<key id="Label"></key>
-<key id="SourceOrTarget">source</key>
-</mapproperties>
-</object>
-<role idEntity="WifeOf" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="1861077699">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="SocialSourceMR" class="ingenias.editor.entities.MetaRole" roleName="AssociationEndtarget" type="ingenias.editor.entities.AssociationEndtargetRole" dgcid="1961452200">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="517" type="ingenias.editor.entities.PlayedBy">
-<object id="517" type="ingenias.editor.entities.PlayedBy">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="Human" class="ingenias.editor.entities.MetaObject" roleName="PlayedBytarget" type="ingenias.editor.entities.PlayedBytargetRole" dgcid="1047878951">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="SocialTargetMR" class="ingenias.editor.entities.MetaRole" roleName="PlayedBysource" type="ingenias.editor.entities.PlayedBysourceRole" dgcid="2011220099">
+</role><role idEntity="Parents" class="ingenias.editor.entities.MetaRelationship" roleName="AssociationEndsource" type="ingenias.editor.entities.AssociationEndsourceRole" dgcid="805716879">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -14841,6 +14887,23 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role><role idEntity="SocialNetwork" class="ingenias.editor.entities.MetaObject" roleName="VisualizedAssource" type="ingenias.editor.entities.VisualizedAssourceRole" dgcid="330831694">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="225" type="ingenias.editor.entities.Contains">
+<object id="225" type="ingenias.editor.entities.Contains">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Bosses" class="ingenias.editor.entities.MetaRelationship" roleName="Containstarget" type="ingenias.editor.entities.ContainstargetRole" dgcid="2090282248">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialSpecDiagram" class="ingenias.editor.entities.MetaDiagram" roleName="Containssource" type="ingenias.editor.entities.ContainssourceRole" dgcid="2048070061">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -14972,6 +15035,23 @@
 </mapproperties>
 </object>
 <role idEntity="PersonalInfo" class="ingenias.editor.entities.MetaObject" roleName="Containstarget" type="ingenias.editor.entities.ContainstargetRole" dgcid="457310351">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialSpecDiagram" class="ingenias.editor.entities.MetaDiagram" roleName="Containssource" type="ingenias.editor.entities.ContainssourceRole" dgcid="2048070061">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="195" type="ingenias.editor.entities.Contains">
+<object id="195" type="ingenias.editor.entities.Contains">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Parents" class="ingenias.editor.entities.MetaRelationship" roleName="Containstarget" type="ingenias.editor.entities.ContainstargetRole" dgcid="963500363">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -26311,7 +26391,7 @@
 			
 	<node id="StopBehaviourEvent" nid="node4" type="MetaObject">
 		<attr name="bounds">
-			<rectangle x="444" y="320" width="133" height="40"></rectangle>		</attr>
+			<rectangle x="444" y="317" width="133" height="40"></rectangle>		</attr>
 
 
 	</node>
@@ -26325,7 +26405,7 @@
 			
 	<node id="599" nid="node7" type="InheritsO">
 		<attr name="bounds">
-			<rectangle x="445" y="279" width="61" height="15"></rectangle>		</attr>
+			<rectangle x="445" y="277" width="61" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -26501,7 +26581,7 @@
 			
 	<node id="node4">
 		<attr name="bounds">
-			<rectangle x="444" y="320" width="133" height="40"></rectangle>		</attr>
+			<rectangle x="444" y="317" width="133" height="40"></rectangle>		</attr>
 
 
 	</node>
@@ -26515,7 +26595,7 @@
 			
 	<node id="node7">
 		<attr name="bounds">
-			<rectangle x="445" y="279" width="61" height="15"></rectangle>		</attr>
+			<rectangle x="445" y="277" width="61" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -39942,7 +40022,9 @@
 <object id="GenericDiseaseProfile" type="ingenias.editor.entities.MetamodelDataEntity">
 <mapproperties>
 <key id="Id">GenericDiseaseProfile</key>
-<key id="Description"></key>
+<key id="Description">&lt;p&gt;Elements of the Generic Disease diagram. The first concept of the disease is the stage (&lt;b&gt;DiseaseStage&lt;/b&gt;). This stage is set in the &lt;i&gt;GDiseaseLevelField&lt;/i&gt;. A stage has reference to a diagram that specifies when the intakes of medicines take place. Finally, a stage has a set of symptoms that are linked using &lt;i&gt;Symptoms&lt;/i&gt; relationship.&lt;/p&gt;
+
+&lt;p&gt;A symptom (&lt;b&gt;GSymptom&lt;/b&gt; object) has a name or type (&lt;i&gt;SymptomNameField&lt;/i&gt;) and a reference to its evolution (&lt;i&gt;SymptomEvoField&lt;/i&gt;). A symptom has four levels and can change along time (NONE, LOW, MEDIUM AND HIGH). Besides every symptom involve a set of limitations that are modeled using a &lt;b&gt;TaskFilter diagram&lt;/b&gt;.There are three types of references to task filters (&lt;b&gt;LOWTaskFilterR&lt;/b&gt;, &lt;b&gt;MEDIUMTaskFilterR&lt;/b&gt; and &lt;b&gt;HIGHTaskFilterR&lt;/b&gt;). Each one is applied depending on the state of the symptom. For example, if a tremor symptom is in a low state, then the filter applied will be those whose type is LOWTaskFilterR.&lt;/p&gt;</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -39958,23 +40040,146 @@
 
 	<graph>
 			
-	<node id="SymptomMR" nid="node27" type="MetaRole">
+	<node id="569" nid="node11" type="PlayedBy">
 		<attr name="bounds">
-			<rectangle x="486" y="203" width="87" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="549" nid="node18" type="AssociationEnd">
-		<attr name="bounds">
-			<rectangle x="660" y="269" width="156" height="64"></rectangle>		</attr>
+			<rectangle x="63" y="176" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
 
-	<connected id="node24">
+	<connected id="node25">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node28">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="SymptomMR" nid="node22" type="MetaRole">
+		<attr name="bounds">
+			<rectangle x="486" y="203" width="87" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="MedicationTimeSpecField" nid="node29" type="PropertyField">
+		<attr name="bounds">
+			<rectangle x="176" y="31" width="159" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="GDiseaseLevelField" nid="node20" type="PropertyField">
+		<attr name="bounds">
+			<rectangle x="14" y="29" width="140" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="MEDIUMTaskFilterR" nid="node30" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="987" y="264" width="136" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="DiseaseStage" nid="node28" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="50" y="117" width="96" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="LOWTaskFilterR" nid="node27" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="851" y="264" width="121" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="566" nid="node0" type="Has">
+		<attr name="bounds">
+			<rectangle x="588" y="94" width="38" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node26">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node18">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="564" nid="node13" type="Has">
+		<attr name="bounds">
+			<rectangle x="591" y="128" width="38" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node26">
 
 
 
@@ -40009,16 +40214,16 @@
 	</connected>
 	</node>
 			
-	<node id="548" nid="node5" type="AssociationEnd">
+	<node id="549" nid="node14" type="AssociationEnd">
 		<attr name="bounds">
-			<rectangle x="516" y="270" width="156" height="64"></rectangle>		</attr>
+			<rectangle x="660" y="269" width="156" height="64"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
 
-	<connected id="node24">
+	<connected id="node19">
 
 
 
@@ -40034,65 +40239,7 @@
 
 
 	</connected>
-	<connected id="node27">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="LOWTaskFilterR" nid="node32" type="MetaObject">
-		<attr name="bounds">
-			<rectangle x="851" y="264" width="121" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="DiseaseStage" nid="node33" type="MetaObject">
-		<attr name="bounds">
-			<rectangle x="50" y="117" width="96" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="383" nid="node9" type="AssociationEnd">
-		<attr name="bounds">
-			<rectangle x="315" y="197" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node20">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node27">
+	<connected id="node17">
 
 
 
@@ -40111,9 +40258,9 @@
 	</connected>
 	</node>
 			
-	<node id="562" nid="node8" type="Contains">
+	<node id="356" nid="node2" type="Has">
 		<attr name="bounds">
-			<rectangle x="1016" y="338" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="1151" y="131" width="38" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -40136,7 +40283,7 @@
 
 
 	</connected>
-	<connected id="node35">
+	<connected id="node15">
 
 
 
@@ -40155,23 +40302,16 @@
 	</connected>
 	</node>
 			
-	<node id="DStageMR" nid="node30" type="MetaRole">
+	<node id="292" nid="node4" type="InheritsO">
 		<attr name="bounds">
-			<rectangle x="54" y="209" width="85" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="556" nid="node10" type="Has">
-		<attr name="bounds">
-			<rectangle x="142" y="95" width="38" height="15"></rectangle>		</attr>
+			<rectangle x="944" y="203" width="73" height="17"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
 
-	<connected id="node33">
+	<connected id="node27">
 
 
 
@@ -40187,7 +40327,7 @@
 
 
 	</connected>
-	<connected id="node34">
+	<connected id="node23">
 
 
 
@@ -40206,16 +40346,16 @@
 	</connected>
 	</node>
 			
-	<node id="566" nid="node0" type="Has">
+	<node id="383" nid="node7" type="AssociationEnd">
 		<attr name="bounds">
-			<rectangle x="588" y="94" width="38" height="15"></rectangle>		</attr>
+			<rectangle x="315" y="197" width="156" height="64"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
 
-	<connected id="node31">
+	<connected id="node16">
 
 
 
@@ -40250,336 +40390,30 @@
 	</connected>
 	</node>
 			
-	<node id="TaskFilterRef" nid="node28" type="MetaObject">
-		<attr name="bounds">
-			<rectangle x="981" y="118" width="136" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="560" nid="node7" type="Contains">
-		<attr name="bounds">
-			<rectangle x="807" y="386" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node23">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node24">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="MedicationTimeSpecField" nid="node34" type="PropertyField">
-		<attr name="bounds">
-			<rectangle x="176" y="31" width="159" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="GenericDiseaseSpecDiag" nid="node23" type="MetaDiagram">
-		<attr name="bounds">
-			<rectangle x="961" y="387" width="170" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="Limitations" nid="node24" type="MetaRelationship">
+	<node id="Limitations" nid="node19" type="MetaRelationship">
 		<attr name="bounds">
 			<rectangle x="597" y="361" width="124" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="TaskAllowed" nid="node19" type="PropertyField">
-		<attr name="bounds">
-			<rectangle x="1224" y="120" width="144" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="547" nid="node3" type="PlayedBy">
-		<attr name="bounds">
-			<rectangle x="888" y="176" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node21">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node28">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="356" nid="node2" type="Has">
-		<attr name="bounds">
-			<rectangle x="1151" y="131" width="38" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node28">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node19">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="HIGHTaskFilterR" nid="node29" type="MetaObject">
+	<node id="HIGHTaskFilterR" nid="node24" type="MetaObject">
 		<attr name="bounds">
 			<rectangle x="1142" y="263" width="135" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="MEDIUMTaskFilterR" nid="node35" type="MetaObject">
+	<node id="556" nid="node8" type="Has">
 		<attr name="bounds">
-			<rectangle x="987" y="264" width="136" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="GSymptom" nid="node31" type="MetaObject">
-		<attr name="bounds">
-			<rectangle x="476" y="107" width="87" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="555" nid="node13" type="Has">
-		<attr name="bounds">
-			<rectangle x="72" y="86" width="38" height="15"></rectangle>		</attr>
+			<rectangle x="142" y="95" width="38" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
 
-	<connected id="node33">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node25">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="292" nid="node4" type="InheritsO">
-		<attr name="bounds">
-			<rectangle x="944" y="203" width="73" height="17"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node32">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
 	<connected id="node28">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="569" nid="node15" type="PlayedBy">
-		<attr name="bounds">
-			<rectangle x="63" y="176" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node30">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node33">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="563" nid="node14" type="Contains">
-		<attr name="bounds">
-			<rectangle x="1093" y="338" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node23">
 
 
 
@@ -40596,6 +40430,122 @@
 
 	</connected>
 	<connected id="node29">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Symptoms" nid="node16" type="MetaRelationship">
+		<attr name="bounds">
+			<rectangle x="257" y="121" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="GSymptom" nid="node26" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="476" y="107" width="87" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="TaskFilterMR" nid="node17" type="MetaRole">
+		<attr name="bounds">
+			<rectangle x="773" y="201" width="90" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="TaskAllowed" nid="node15" type="PropertyField">
+		<attr name="bounds">
+			<rectangle x="1224" y="120" width="144" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="555" nid="node10" type="Has">
+		<attr name="bounds">
+			<rectangle x="72" y="86" width="38" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node28">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node20">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="541" nid="node1" type="InheritsO">
+		<attr name="bounds">
+			<rectangle x="1099" y="203" width="61" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node24">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node23">
 
 
 
@@ -40623,248 +40573,7 @@
 
 
 
-	<connected id="node27">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node31">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="381" nid="node16" type="AssociationEnd">
-		<attr name="bounds">
-			<rectangle x="159" y="196" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node20">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node30">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="313" nid="node12" type="InheritsO">
-		<attr name="bounds">
-			<rectangle x="1022" y="204" width="61" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node35">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node28">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="Symptoms" nid="node20" type="MetaRelationship">
-		<attr name="bounds">
-			<rectangle x="257" y="121" width="124" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="GDiseaseLevelField" nid="node25" type="PropertyField">
-		<attr name="bounds">
-			<rectangle x="14" y="29" width="140" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="541" nid="node1" type="InheritsO">
-		<attr name="bounds">
-			<rectangle x="1099" y="203" width="61" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node29">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node28">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="TaskFilterMR" nid="node21" type="MetaRole">
-		<attr name="bounds">
-			<rectangle x="773" y="201" width="90" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="561" nid="node11" type="Contains">
-		<attr name="bounds">
-			<rectangle x="944" y="338" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node23">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node32">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="564" nid="node17" type="Has">
-		<attr name="bounds">
-			<rectangle x="591" y="128" width="38" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node31">
+	<connected id="node22">
 
 
 
@@ -40899,18 +40608,208 @@
 	</connected>
 	</node>
 			
-	<node id="SymptomName" nid="node26" type="PropertyField">
+	<node id="TaskFilterRef" nid="node23" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="981" y="118" width="136" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="313" nid="node9" type="InheritsO">
+		<attr name="bounds">
+			<rectangle x="1022" y="204" width="61" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node30">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node23">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="548" nid="node5" type="AssociationEnd">
+		<attr name="bounds">
+			<rectangle x="516" y="270" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node19">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node22">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="DStageMR" nid="node25" type="MetaRole">
+		<attr name="bounds">
+			<rectangle x="54" y="209" width="85" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="SymptomEvoField" nid="node18" type="PropertyField">
+		<attr name="bounds">
+			<rectangle x="651" y="48" width="144" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="381" nid="node12" type="AssociationEnd">
+		<attr name="bounds">
+			<rectangle x="159" y="196" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node16">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node25">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="SymptomName" nid="node21" type="PropertyField">
 		<attr name="bounds">
 			<rectangle x="657" y="126" width="114" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="SymptomEvoField" nid="node22" type="PropertyField">
+	<node id="547" nid="node3" type="PlayedBy">
 		<attr name="bounds">
-			<rectangle x="651" y="48" width="144" height="40"></rectangle>		</attr>
+			<rectangle x="888" y="176" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
 
 
+
+	<connected id="node17">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node23">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
 	</node><parentship>
 </parentship>
 <entityconstraints>
@@ -40922,85 +40821,55 @@
 
 	<layout>
 			
-	<node id="node27">
+	<node id="node11">
+		<attr name="bounds">
+			<rectangle x="63" y="176" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
+	<node id="node22">
 		<attr name="bounds">
 			<rectangle x="486" y="203" width="87" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node18">
+	<node id="node29">
 		<attr name="bounds">
-			<rectangle x="660" y="269" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
+			<rectangle x="176" y="31" width="159" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node5">
+	<node id="node20">
 		<attr name="bounds">
-			<rectangle x="516" y="270" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	</node>
-			
-	<node id="node32">
-		<attr name="bounds">
-			<rectangle x="851" y="264" width="121" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node33">
-		<attr name="bounds">
-			<rectangle x="50" y="117" width="96" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node9">
-		<attr name="bounds">
-			<rectangle x="315" y="197" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	</node>
-			
-	<node id="node8">
-		<attr name="bounds">
-			<rectangle x="1016" y="338" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
+			<rectangle x="14" y="29" width="140" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="node30">
 		<attr name="bounds">
-			<rectangle x="54" y="209" width="85" height="40"></rectangle>		</attr>
+			<rectangle x="987" y="264" width="136" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node10">
+	<node id="node28">
 		<attr name="bounds">
-			<rectangle x="142" y="95" width="38" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
+			<rectangle x="50" y="117" width="96" height="40"></rectangle>		</attr>
 
+
+	</node>
+			
+	<node id="node27">
+		<attr name="bounds">
+			<rectangle x="851" y="264" width="121" height="40"></rectangle>		</attr>
 
 
 	</node>
@@ -41016,16 +40885,9 @@
 
 	</node>
 			
-	<node id="node28">
+	<node id="node13">
 		<attr name="bounds">
-			<rectangle x="981" y="118" width="136" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node7">
-		<attr name="bounds">
-			<rectangle x="807" y="386" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="591" y="128" width="38" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -41034,37 +40896,9 @@
 
 	</node>
 			
-	<node id="node34">
+	<node id="node14">
 		<attr name="bounds">
-			<rectangle x="176" y="31" width="159" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node23">
-		<attr name="bounds">
-			<rectangle x="961" y="387" width="170" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node24">
-		<attr name="bounds">
-			<rectangle x="597" y="361" width="124" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node19">
-		<attr name="bounds">
-			<rectangle x="1224" y="120" width="144" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node3">
-		<attr name="bounds">
-			<rectangle x="888" y="176" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="660" y="269" width="156" height="64"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -41084,38 +40918,6 @@
 
 	</node>
 			
-	<node id="node29">
-		<attr name="bounds">
-			<rectangle x="1142" y="263" width="135" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node35">
-		<attr name="bounds">
-			<rectangle x="987" y="264" width="136" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node31">
-		<attr name="bounds">
-			<rectangle x="476" y="107" width="87" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node13">
-		<attr name="bounds">
-			<rectangle x="72" y="86" width="38" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	</node>
-			
 	<node id="node4">
 		<attr name="bounds">
 			<rectangle x="944" y="203" width="73" height="17"></rectangle>		</attr>
@@ -41127,9 +40929,9 @@
 
 	</node>
 			
-	<node id="node15">
+	<node id="node7">
 		<attr name="bounds">
-			<rectangle x="63" y="176" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="315" y="197" width="156" height="64"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -41138,9 +40940,73 @@
 
 	</node>
 			
-	<node id="node14">
+	<node id="node19">
 		<attr name="bounds">
-			<rectangle x="1093" y="338" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="597" y="361" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node24">
+		<attr name="bounds">
+			<rectangle x="1142" y="263" width="135" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="142" y="95" width="38" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
+	<node id="node16">
+		<attr name="bounds">
+			<rectangle x="257" y="121" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node26">
+		<attr name="bounds">
+			<rectangle x="476" y="107" width="87" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node17">
+		<attr name="bounds">
+			<rectangle x="773" y="201" width="90" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node15">
+		<attr name="bounds">
+			<rectangle x="1224" y="120" width="144" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="72" y="86" width="38" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="1099" y="203" width="61" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -41160,18 +41026,14 @@
 
 	</node>
 			
-	<node id="node16">
+	<node id="node23">
 		<attr name="bounds">
-			<rectangle x="159" y="196" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
+			<rectangle x="981" y="118" width="136" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node12">
+	<node id="node9">
 		<attr name="bounds">
 			<rectangle x="1022" y="204" width="61" height="15"></rectangle>		</attr>
 		<attr name="view">
@@ -41182,23 +41044,34 @@
 
 	</node>
 			
-	<node id="node20">
+	<node id="node5">
 		<attr name="bounds">
-			<rectangle x="257" y="121" width="124" height="40"></rectangle>		</attr>
+			<rectangle x="516" y="270" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 
 
 	</node>
 			
 	<node id="node25">
 		<attr name="bounds">
-			<rectangle x="14" y="29" width="140" height="40"></rectangle>		</attr>
+			<rectangle x="54" y="209" width="85" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node1">
+	<node id="node18">
 		<attr name="bounds">
-			<rectangle x="1099" y="203" width="61" height="15"></rectangle>		</attr>
+			<rectangle x="651" y="48" width="144" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node12">
+		<attr name="bounds">
+			<rectangle x="159" y="196" width="156" height="64"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -41209,43 +41082,18 @@
 			
 	<node id="node21">
 		<attr name="bounds">
-			<rectangle x="773" y="201" width="90" height="40"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node11">
-		<attr name="bounds">
-			<rectangle x="944" y="338" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	</node>
-			
-	<node id="node17">
-		<attr name="bounds">
-			<rectangle x="591" y="128" width="38" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	</node>
-			
-	<node id="node26">
-		<attr name="bounds">
 			<rectangle x="657" y="126" width="114" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node22">
+	<node id="node3">
 		<attr name="bounds">
-			<rectangle x="651" y="48" width="144" height="40"></rectangle>		</attr>
+			<rectangle x="888" y="176" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 
 
 	</node>
@@ -42538,256 +42386,65 @@
 
 	<graph>
 			
-	<node id="520" nid="node12" type="AssociationEnd">
-		<attr name="bounds">
-			<rectangle x="549" y="2" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	<connected id="node5">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node3">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="SocialNetwork" nid="node6" type="MetaObject">
+	<node id="SocialNetwork" nid="node12" type="MetaObject">
 		<attr name="bounds">
 			<rectangle x="20" y="45" width="113" height="40"></rectangle>		</attr>
 
-	</node>
-			
-	<node id="518" nid="node8" type="PlayedBy">
-		<attr name="bounds">
-			<rectangle x="40" y="109" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	<connected id="node2">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node6">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="519" nid="node11" type="AssociationEnd">
-		<attr name="bounds">
-			<rectangle x="175" y="1" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	<connected id="node5">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node2">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="573" nid="node7" type="AssociationEnd">
-		<attr name="bounds">
-			<rectangle x="548" y="149" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	<connected id="node4">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node3">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="WifeOf" nid="node1" type="MetaRelationship">
-		<attr name="bounds">
-			<rectangle x="373" y="82" width="124" height="40"></rectangle>		</attr>
 
 	</node>
 			
-	<node id="HusbandOf" nid="node5" type="MetaRelationship">
-		<attr name="bounds">
-			<rectangle x="375" y="13" width="124" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="572" nid="node10" type="AssociationEnd">
-		<attr name="bounds">
-			<rectangle x="169" y="145" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	<connected id="node4">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node2">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="SocialSourceMR" nid="node2" type="MetaRole">
-		<attr name="bounds">
-			<rectangle x="19" y="147" width="108" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="CaregiverOf" nid="node4" type="MetaRelationship">
+	<node id="CaregiverOf" nid="node14" type="MetaRelationship">
 		<attr name="bounds">
 			<rectangle x="372" y="160" width="124" height="40"></rectangle>		</attr>
 
-	</node>
-			
-	<node id="Human" nid="node0" type="MetaObject">
-		<attr name="bounds">
-			<rectangle x="778" y="39" width="89" height="42"></rectangle>		</attr>
 
 	</node>
 			
-	<node id="517" nid="node14" type="PlayedBy">
+	<node id="WifeOf" nid="node17" type="MetaRelationship">
 		<attr name="bounds">
-			<rectangle x="787" y="99" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="373" y="82" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="573" nid="node11" type="AssociationEnd">
+		<attr name="bounds">
+			<rectangle x="553" y="147" width="156" height="64"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
-	<connected id="node3">
+
+	<connected id="node14">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="631.0" y="179.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="434.0" y="180.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+
+	</connected>
+	<connected id="node15">
+
 
 
 
@@ -42801,8 +42458,43 @@
 
 
 
+
 	</connected>
-	<connected id="node0">
+	</node>
+			
+	<node id="Human" nid="node18" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="778" y="39" width="89" height="42"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="521" nid="node5" type="AssociationEnd">
+		<attr name="bounds">
+			<rectangle x="176" y="65" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node17">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node16">
 
 
 
@@ -42817,7 +42509,15 @@
 
 
 
+
 	</connected>
+	</node>
+			
+	<node id="HusbandOf" nid="node13" type="MetaRelationship">
+		<attr name="bounds">
+			<rectangle x="375" y="13" width="124" height="40"></rectangle>		</attr>
+
+
 	</node>
 			
 	<node id="522" nid="node9" type="AssociationEnd">
@@ -42828,7 +42528,8 @@
 		</attr>
 
 
-	<connected id="node1">
+
+	<connected id="node17">
 
 
 
@@ -42842,40 +42543,97 @@
 
 
 
+
 	</connected>
+	<connected id="node15">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="SocialSourceMR" nid="node16" type="MetaRole">
+		<attr name="bounds">
+			<rectangle x="19" y="147" width="108" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="194" nid="node2" type="AssociationEnd">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="549" y="234" width="156" height="64"></rectangle>		</attr>
+
+
 	<connected id="node3">
 
 
 
 
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="663.0" y="400.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="441.0" y="249.0"></point>
 		</attr>
 
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node15">
 
 
 
 
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="663.0" y="400.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="820.5" y="152.0"></point>
+		</attr>
+
+</list>
+		</attr>
 
 	</connected>
 	</node>
 			
-	<node id="SocialTargetMR" nid="node3" type="MetaRole">
+	<node id="518" nid="node10" type="PlayedBy">
 		<attr name="bounds">
-			<rectangle x="765" y="132" width="111" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="521" nid="node13" type="AssociationEnd">
-		<attr name="bounds">
-			<rectangle x="176" y="65" width="156" height="64"></rectangle>		</attr>
+			<rectangle x="40" y="109" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
-	<connected id="node1">
+
+	<connected id="node16">
 
 
 
@@ -42883,6 +42641,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -42890,7 +42649,7 @@
 
 
 	</connected>
-	<connected id="node2">
+	<connected id="node12">
 
 
 
@@ -42899,6 +42658,319 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Bosses" nid="node20" type="MetaRelationship">
+		<attr name="bounds">
+			<rectangle x="379" y="328" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="519" nid="node7" type="AssociationEnd">
+		<attr name="bounds">
+			<rectangle x="175" y="1" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node13">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node16">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Parents" nid="node3" type="MetaRelationship">
+		<attr name="bounds">
+			<rectangle x="379" y="229" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="193" nid="node19" type="AssociationEnd">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="164" y="214" width="156" height="64"></rectangle>		</attr>
+
+
+	<connected id="node3">
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="242.0" y="246.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="441.0" y="249.0"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node16">
+
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="242.0" y="246.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="73.0" y="167.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+	</connected>
+	</node>
+			
+	<node id="197" nid="node0" type="AssociationEnd">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="570" y="317" width="156" height="64"></rectangle>		</attr>
+
+
+	<connected id="node20"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node15">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="517" nid="node4" type="PlayedBy">
+		<attr name="bounds">
+			<rectangle x="787" y="99" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node15">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node18">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="520" nid="node6" type="AssociationEnd">
+		<attr name="bounds">
+			<rectangle x="549" y="2" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node13">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node15">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="196" nid="node1" type="AssociationEnd">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="162" y="310" width="156" height="64"></rectangle>		</attr>
+
+
+	<connected id="node20"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node16">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="SocialTargetMR" nid="node15" type="MetaRole">
+		<attr name="bounds">
+			<rectangle x="765" y="132" width="111" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="572" nid="node8" type="AssociationEnd">
+		<attr name="bounds">
+			<rectangle x="169" y="145" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node14">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node16">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
 
 
 
@@ -42919,96 +42991,57 @@
 			
 	<node id="node12">
 		<attr name="bounds">
-			<rectangle x="549" y="2" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	</node>
-			
-	<node id="node6">
-		<attr name="bounds">
 			<rectangle x="20" y="45" width="113" height="40"></rectangle>		</attr>
 
+
 	</node>
 			
-	<node id="node8">
+	<node id="node14">
 		<attr name="bounds">
-			<rectangle x="40" y="109" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
+			<rectangle x="372" y="160" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node17">
+		<attr name="bounds">
+			<rectangle x="373" y="82" width="124" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="node11">
 		<attr name="bounds">
-			<rectangle x="175" y="1" width="156" height="64"></rectangle>		</attr>
+			<rectangle x="553" y="147" width="156" height="64"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
-	</node>
-			
-	<node id="node7">
-		<attr name="bounds">
-			<rectangle x="548" y="149" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
 
 	</node>
 			
-	<node id="node1">
+	<node id="node18">
 		<attr name="bounds">
-			<rectangle x="373" y="82" width="124" height="40"></rectangle>		</attr>
+			<rectangle x="778" y="39" width="89" height="42"></rectangle>		</attr>
+
 
 	</node>
 			
 	<node id="node5">
 		<attr name="bounds">
+			<rectangle x="176" y="65" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
+	<node id="node13">
+		<attr name="bounds">
 			<rectangle x="375" y="13" width="124" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="node10">
-		<attr name="bounds">
-			<rectangle x="169" y="145" width="156" height="64"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	</node>
-			
-	<node id="node2">
-		<attr name="bounds">
-			<rectangle x="19" y="147" width="108" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="node4">
-		<attr name="bounds">
-			<rectangle x="372" y="160" width="124" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="node0">
-		<attr name="bounds">
-			<rectangle x="778" y="39" width="89" height="42"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="node14">
-		<attr name="bounds">
-			<rectangle x="787" y="99" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
 
 
 	</node>
@@ -43021,20 +43054,132 @@
 		</attr>
 
 
+
+	</node>
+			
+	<node id="node16">
+		<attr name="bounds">
+			<rectangle x="19" y="147" width="108" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="549" y="234" width="156" height="64"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="40" y="109" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
+	<node id="node20">
+		<attr name="bounds">
+			<rectangle x="379" y="328" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="175" y="1" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
 	</node>
 			
 	<node id="node3">
 		<attr name="bounds">
-			<rectangle x="765" y="132" width="111" height="40"></rectangle>		</attr>
+			<rectangle x="379" y="229" width="124" height="40"></rectangle>		</attr>
+
 
 	</node>
 			
-	<node id="node13">
-		<attr name="bounds">
-			<rectangle x="176" y="65" width="156" height="64"></rectangle>		</attr>
+	<node id="node19">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
+		<attr name="bounds">
+			<rectangle x="164" y="214" width="156" height="64"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="570" y="317" width="156" height="64"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="787" y="99" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="549" y="2" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="162" y="310" width="156" height="64"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node15">
+		<attr name="bounds">
+			<rectangle x="765" y="132" width="111" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="169" y="145" width="156" height="64"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 
 
 	</node>
@@ -43063,11 +43208,13 @@
 		<attr name="bounds">
 			<rectangle x="284" y="39" width="146" height="40"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="PersonalInfoBR" nid="node2" type="BasicRepresentation">
 		<attr name="bounds">
 			<rectangle x="287" y="158" width="146" height="40"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -43075,17 +43222,20 @@
 		<attr name="bounds">
 			<rectangle x="37" y="35" width="113" height="40"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="Profession" nid="node0" type="MetaObject">
 		<attr name="bounds">
 			<rectangle x="49" y="92" width="87" height="40"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="ProfessionBR" nid="node1" type="BasicRepresentation">
 		<attr name="bounds">
 			<rectangle x="284" y="91" width="146" height="40"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -43097,6 +43247,7 @@
 		</attr>
 
 
+
 	<connected id="node5">
 
 
@@ -43105,6 +43256,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -43127,12 +43279,14 @@
 
 
 
+
 	</connected>
 	</node>
 			
 	<node id="PersonalInfo" nid="node5" type="MetaObject">
 		<attr name="bounds">
 			<rectangle x="53" y="157" width="87" height="40"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -43144,6 +43298,7 @@
 		</attr>
 
 
+
 	<connected id="node3">
 
 
@@ -43152,6 +43307,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -43174,6 +43330,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -43185,6 +43342,7 @@
 		</attr>
 
 
+
 	<connected id="node0">
 
 
@@ -43193,6 +43351,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -43215,6 +43374,7 @@
 
 
 
+
 	</connected>
 	</node><parentship>
 </parentship>
@@ -43231,11 +43391,13 @@
 		<attr name="bounds">
 			<rectangle x="284" y="39" width="146" height="40"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="node2">
 		<attr name="bounds">
 			<rectangle x="287" y="158" width="146" height="40"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -43243,17 +43405,20 @@
 		<attr name="bounds">
 			<rectangle x="37" y="35" width="113" height="40"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="node0">
 		<attr name="bounds">
 			<rectangle x="49" y="92" width="87" height="40"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="node1">
 		<attr name="bounds">
 			<rectangle x="284" y="91" width="146" height="40"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -43265,11 +43430,13 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node5">
 		<attr name="bounds">
 			<rectangle x="53" y="157" width="87" height="40"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -43281,6 +43448,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node7">
@@ -43289,6 +43457,7 @@
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
 
 
 	</node>
@@ -43313,15 +43482,23 @@
 
 	<graph>
 			
-	<node id="432" nid="node16" type="Contains">
+	<node id="CaregiverOf" nid="node3" type="MetaRelationship">
 		<attr name="bounds">
-			<rectangle x="223" y="253" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="371" y="107" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="403" nid="node12" type="Contains">
+		<attr name="bounds">
+			<rectangle x="76" y="88" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
-	<connected id="node8">
+
+	<connected id="node10">
 
 
 
@@ -43330,93 +43507,6 @@
 			<point x="500.0" y="-20.0"></point>
 		</attr>
 
-
-
-
-
-
-	</connected>
-	<connected id="node7">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="151" nid="node9" type="Contains">
-		<attr name="bounds">
-			<rectangle x="248" y="107" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	<connected id="node8">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node4">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="PersonalInfo" nid="node7" type="MetaObject">
-		<attr name="bounds">
-			<rectangle x="365" y="366" width="87" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="139" nid="node13" type="Contains">
-		<attr name="bounds">
-			<rectangle x="250" y="84" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	<connected id="node8">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
 
 
 
@@ -43439,16 +43529,63 @@
 
 
 
+
 	</connected>
 	</node>
 			
-	<node id="WifeOf" nid="node4" type="MetaRelationship">
+	<node id="195" nid="node20" type="Contains">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 		<attr name="bounds">
-			<rectangle x="372" y="60" width="124" height="40"></rectangle>		</attr>
+			<rectangle x="250" y="82" width="69" height="15"></rectangle>		</attr>
+
+
+	<connected id="node10"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node19">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="SocialSpecDiagram" nid="node10" type="MetaDiagram">
+		<attr name="bounds">
+			<rectangle x="60" y="131" width="133" height="40"></rectangle>		</attr>
+
 
 	</node>
 			
-	<node id="400" nid="node12" type="Contains">
+	<node id="Parents" nid="node19" type="MetaRelationship">
+		<attr name="bounds">
+			<rectangle x="376" y="10" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="Profession" nid="node7" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="117" y="322" width="87" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="400" nid="node14" type="Contains">
 		<attr name="bounds">
 			<rectangle x="248" y="131" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
@@ -43456,7 +43593,8 @@
 		</attr>
 
 
-	<connected id="node8">
+
+	<connected id="node10">
 
 
 
@@ -43465,99 +43603,6 @@
 			<point x="500.0" y="-20.0"></point>
 		</attr>
 
-
-
-
-
-
-	</connected>
-	<connected id="node1">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="403" nid="node10" type="Contains">
-		<attr name="bounds">
-			<rectangle x="246" y="212" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	<connected id="node8">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node0">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="SocialNetwork" nid="node6" type="MetaObject">
-		<attr name="bounds">
-			<rectangle x="365" y="313" width="113" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="Human" nid="node3" type="MetaObject">
-		<attr name="bounds">
-			<rectangle x="372" y="154" width="89" height="42"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="401" nid="node11" type="Contains">
-		<attr name="bounds">
-			<rectangle x="248" y="156" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-	<connected id="node8">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
 
 
 
@@ -43580,24 +43625,20 @@
 
 
 
+
 	</connected>
 	</node>
 			
-	<node id="SocialSpecDiagram" nid="node8" type="MetaDiagram">
+	<node id="139" nid="node15" type="Contains">
 		<attr name="bounds">
-			<rectangle x="60" y="131" width="133" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="422" nid="node15" type="Contains">
-		<attr name="bounds">
-			<rectangle x="245" y="238" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="248" y="156" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
-	<connected id="node8">
+
+	<connected id="node10">
 
 
 
@@ -43605,6 +43646,51 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node4">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="151" nid="node11" type="Contains">
+		<attr name="bounds">
+			<rectangle x="248" y="107" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node10">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
 
 
 
@@ -43627,42 +43713,20 @@
 
 
 
+
 	</connected>
 	</node>
 			
-	<node id="SBuilding" nid="node0" type="MetaObject">
+	<node id="402" nid="node16" type="Contains">
 		<attr name="bounds">
-			<rectangle x="367" y="260" width="103" height="42"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="CaregiverOf" nid="node1" type="MetaRelationship">
-		<attr name="bounds">
-			<rectangle x="371" y="107" width="124" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="Profession" nid="node5" type="MetaObject">
-		<attr name="bounds">
-			<rectangle x="370" y="208" width="87" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="HusbandOf" nid="node2" type="MetaRelationship">
-		<attr name="bounds">
-			<rectangle x="375" y="13" width="124" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="402" nid="node14" type="Contains">
-		<attr name="bounds">
-			<rectangle x="247" y="185" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="109" y="239" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
-	<connected id="node8">
+
+	<connected id="node10">
 
 
 
@@ -43670,6 +43734,82 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="225" nid="node0" type="Contains">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="248" y="181" width="69" height="15"></rectangle>		</attr>
+
+
+	<connected id="node10"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="401" nid="node13" type="Contains">
+		<attr name="bounds">
+			<rectangle x="63" y="239" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node10">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
 
 
 
@@ -43692,7 +43832,145 @@
 
 
 
+
 	</connected>
+	</node>
+			
+	<node id="PersonalInfo" nid="node9" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="213" y="321" width="87" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="432" nid="node18" type="Contains">
+		<attr name="bounds">
+			<rectangle x="157" y="239" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node10">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node9">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Bosses" nid="node1" type="MetaRelationship">
+		<attr name="bounds">
+			<rectangle x="372" y="204" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="SBuilding" nid="node2" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="42" y="17" width="103" height="42"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="Human" nid="node5" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="23" y="321" width="89" height="42"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="SocialNetwork" nid="node8" type="MetaObject">
+		<attr name="bounds">
+			<rectangle x="212" y="11" width="113" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="HusbandOf" nid="node4" type="MetaRelationship">
+		<attr name="bounds">
+			<rectangle x="372" y="155" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="422" nid="node17" type="Contains">
+		<attr name="bounds">
+			<rectangle x="163" y="84" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node10">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node8">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="WifeOf" nid="node6" type="MetaRelationship">
+		<attr name="bounds">
+			<rectangle x="372" y="60" width="124" height="40"></rectangle>		</attr>
+
+
 	</node><parentship>
 </parentship>
 <entityconstraints>
@@ -43704,49 +43982,57 @@
 
 	<layout>
 			
-	<node id="node16">
+	<node id="node3">
 		<attr name="bounds">
-			<rectangle x="223" y="253" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
+			<rectangle x="371" y="107" width="124" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node9">
+	<node id="node12">
 		<attr name="bounds">
-			<rectangle x="248" y="107" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="76" y="88" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
+
+
+	</node>
+			
+	<node id="node20">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="250" y="82" width="69" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="60" y="131" width="133" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node19">
+		<attr name="bounds">
+			<rectangle x="376" y="10" width="124" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="node7">
 		<attr name="bounds">
-			<rectangle x="365" y="366" width="87" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="node13">
-		<attr name="bounds">
-			<rectangle x="250" y="84" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
+			<rectangle x="117" y="322" width="87" height="40"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node4">
-		<attr name="bounds">
-			<rectangle x="372" y="60" width="124" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="node12">
+	<node id="node14">
 		<attr name="bounds">
 			<rectangle x="248" y="131" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
@@ -43754,31 +44040,10 @@
 		</attr>
 
 
-	</node>
-			
-	<node id="node10">
-		<attr name="bounds">
-			<rectangle x="246" y="212" width="69" height="15"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
 
 	</node>
 			
-	<node id="node6">
-		<attr name="bounds">
-			<rectangle x="365" y="313" width="113" height="40"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="node3">
-		<attr name="bounds">
-			<rectangle x="372" y="154" width="89" height="42"></rectangle>		</attr>
-
-	</node>
-			
-	<node id="node11">
+	<node id="node15">
 		<attr name="bounds">
 			<rectangle x="248" y="156" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
@@ -43786,54 +44051,120 @@
 		</attr>
 
 
-	</node>
-			
-	<node id="node8">
-		<attr name="bounds">
-			<rectangle x="60" y="131" width="133" height="40"></rectangle>		</attr>
 
 	</node>
 			
-	<node id="node15">
+	<node id="node11">
 		<attr name="bounds">
-			<rectangle x="245" y="238" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="248" y="107" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
+
+
+	</node>
+			
+	<node id="node16">
+		<attr name="bounds">
+			<rectangle x="109" y="239" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 
 
 	</node>
 			
 	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 		<attr name="bounds">
-			<rectangle x="367" y="260" width="103" height="42"></rectangle>		</attr>
+			<rectangle x="248" y="181" width="69" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node13">
+		<attr name="bounds">
+			<rectangle x="63" y="239" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
+	<node id="node9">
+		<attr name="bounds">
+			<rectangle x="213" y="321" width="87" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node18">
+		<attr name="bounds">
+			<rectangle x="157" y="239" width="69" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
 
 	</node>
 			
 	<node id="node1">
 		<attr name="bounds">
-			<rectangle x="371" y="107" width="124" height="40"></rectangle>		</attr>
+			<rectangle x="372" y="204" width="124" height="40"></rectangle>		</attr>
 
-	</node>
-			
-	<node id="node5">
-		<attr name="bounds">
-			<rectangle x="370" y="208" width="87" height="40"></rectangle>		</attr>
 
 	</node>
 			
 	<node id="node2">
 		<attr name="bounds">
-			<rectangle x="375" y="13" width="124" height="40"></rectangle>		</attr>
+			<rectangle x="42" y="17" width="103" height="42"></rectangle>		</attr>
+
 
 	</node>
 			
-	<node id="node14">
+	<node id="node5">
 		<attr name="bounds">
-			<rectangle x="247" y="185" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="23" y="321" width="89" height="42"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="212" y="11" width="113" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="372" y="155" width="124" height="40"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node17">
+		<attr name="bounds">
+			<rectangle x="163" y="84" width="69" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="372" y="60" width="124" height="40"></rectangle>		</attr>
 
 
 	</node>
