@@ -41,7 +41,8 @@
   <modules>
     <module>sociaalmled</module>
     <module>basicscenario</module>
-    <module>e9patient</module>
+    <module>e3patient</module>
+	<module>e9patient</module>
   </modules>
   <profiles>
     <profile>
