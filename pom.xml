@@ -37,7 +37,19 @@
       <email>jjgomez@fdi.ucm.es</email>
     </developer>
   </developers>
-  <properties />
+    <properties>
+		<vendor>GRASIA Research Group</vendor>
+		<!-- maven does not allow to refer to developers property defined at the 
+			beginning -->
+		<!-- an echoproperties task shows there is no accesible project.developers 
+			property -->
+		<developername>Pablo Campillo-Sanchez</developername>
+		<developeremail>pabcampi@ucm.es</developeremail>
+		<!-- begin: izpack configuration -->
+		<ingenme.version>1.0.3</ingenme.version>
+		<!-- end: izpack configuration -->
+	</properties>
+
   <modules>
     <module>sociaalmled</module>
     <module>basicscenario</module>
@@ -82,8 +94,15 @@
       </plugin>
     </plugins>
   </reporting-->
+   <distributionManagement>
+                <site>
+                        <id>website</id>
+                        <url>file:target/finalsite</url>
+                </site>
+        </distributionManagement>
   <build>
     <plugins>
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -200,4 +219,5 @@
       </plugin-->
     </plugins>
   </build>
+
 </project>

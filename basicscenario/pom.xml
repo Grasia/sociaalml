@@ -48,7 +48,14 @@
   
   <build>
     <plugins>
-      
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <siteDirectory>target/dochtml</siteDirectory>
+        </configuration>
+      </plugin>
       <plugin>
 				<!-- Generate the meta-model editor sources in the target folder -->
 				<groupId>org.codehaus.mojo</groupId>

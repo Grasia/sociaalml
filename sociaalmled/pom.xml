@@ -90,6 +90,14 @@
 		<defaultGoal>package</defaultGoal>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
+		      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <siteDirectory>target/dochtml</siteDirectory>
+        </configuration>
+      </plugin>
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>2.4.1</version>
@@ -173,7 +181,7 @@
 								<argument>${project.basedir}</argument>
 							</arguments>
 						</configuration>
-					</execution>
+					</execution>				
 
 				</executions>
 
@@ -618,6 +626,20 @@
 							<goal>run</goal>
 						</goals>
 					</execution>
+					<execution>
+						<id>add-extra-site-doc</id>
+						<phase>site</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<copy todir="${project.basedir}/target/site/dochtml">
+									<fileset dir="${project.basedir}/target/dochtml" />
+								</copy>
+							</tasks>
+						</configuration>
+					</execution>
 
 					<!-- this is part of izipack -->
 					<execution>
@@ -727,7 +749,6 @@
 		<!-- begin: izpack configuration -->
 		<staging.dir>${project.build.directory}/staging</staging.dir>
 		<izpack-standalone.version>4.3.5</izpack-standalone.version>
-		<ingenme.version>1.0.1</ingenme.version>
 		<!-- end: izpack configuration -->
 	</properties>
 </project>
