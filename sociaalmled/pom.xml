@@ -90,15 +90,18 @@
 		<defaultGoal>package</defaultGoal>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
-		      <plugin>
+
+
+  <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.3</version>
         <configuration>
-          <siteDirectory>target/dochtml</siteDirectory>
+          <siteDirectory>${project.basedir}/target/dochtml</siteDirectory>
         </configuration>
       </plugin>
-			<plugin>
+
+			<!--plugin>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>2.4.1</version>
 				<executions>
@@ -110,7 +113,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -165,9 +168,8 @@
 							</arguments>
 						</configuration>
 					</execution>
-
-					<execution>
-						<!-- It generates the documentation associated wiht the metamodel -->
+<!-- It generates the documentation associated wiht the metamodel in each submodule-->    
+					<execution>						
 						<id>generate document for metamodel</id>
 						<phase>pre-site</phase>
 						<goals>
@@ -181,7 +183,7 @@
 								<argument>${project.basedir}</argument>
 							</arguments>
 						</configuration>
-					</execution>				
+					</execution>										
 
 				</executions>
 
@@ -542,6 +544,16 @@
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<includes>pluginssrc/logograsia.jpg</includes>
+									<outputDirectory>${project.basedir}/target/generated/src/main/resources</outputDirectory>
+								</artifactItem>
+
+<artifactItem>
+									<groupId>net.sf.ingenme</groupId>
+									<artifactId>ingened</artifactId>
+									<version>${ingenme.version}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<includes>images/*.*</includes>
 									<outputDirectory>${project.basedir}/target/generated/src/main/resources</outputDirectory>
 								</artifactItem>
 							</artifactItems>
