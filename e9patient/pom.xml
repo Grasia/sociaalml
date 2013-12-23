@@ -32,6 +32,11 @@
     </developer>
   </developers>
   <dependencies>
+		<dependency>
+                  <groupId>org.apache.maven.doxia</groupId>
+                  <artifactId>doxia-module-markdown</artifactId>
+                  <version>1.5</version>
+                </dependency>
     <dependency>
       <groupId>net.sf.sociaal</groupId>
       <artifactId>sociaalmled</artifactId>
@@ -76,6 +81,7 @@
 							<mainClass>ingenias.codeproc.HTMLDocumentGenerator</mainClass>
 							<arguments>
 								<argument>${project.basedir}/src/main/spec/specification.xml</argument>
+								<argument>${project.basedir}</argument>
 							</arguments>
 						</configuration>
 					</execution>

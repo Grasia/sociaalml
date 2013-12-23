@@ -32,6 +32,13 @@
     </developer>
   </developers>
   <dependencies>
+<!--  to get a reference to pegdown markdown module -->
+		<dependency>
+                  <groupId>org.apache.maven.doxia</groupId>
+                  <artifactId>doxia-module-markdown</artifactId>
+                  <version>1.5</version>
+                </dependency>
+
     <dependency>
       <groupId>net.sf.sociaal</groupId>
       <artifactId>sociaalmled</artifactId>
@@ -97,9 +104,9 @@
 	    <configuration>
 	      <outputFile>target/classpath.txt</outputFile>
 	      <artifactItems>
-		<artifactItem>
+		<!--artifactItem>
 		  <excludes>ingened</excludes>
-		  </artifactItem>
+		  </artifactItem-->
 		</artifactItems>
 		<!-- configure the plugin here -->
 		</configuration>
