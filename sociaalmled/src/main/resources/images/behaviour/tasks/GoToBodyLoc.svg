@@ -14,7 +14,7 @@
    id="svg3041"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="GoToTask.svg">
+   sodipodi:docname="GoToBodyLoc.svg">
   <defs
      id="defs3043" />
   <sodipodi:namedview
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -112,9 +112,27 @@
        d="m 12.614017,25.058195 a 2.7644355,2.7644355 0 1 1 -5.5288708,0 2.7644355,2.7644355 0 1 1 5.5288708,0 z"
        transform="translate(4.4845286,1.904389)" />
     <path
-       style="fill:#00ff00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 23.917487,3.4751204 0,-1.4948429 5.446962,2.3753668 L 24.12226,8.2053768 23.937964,6.3214652 14.907475,9.9664247 13.924564,2.5331646 z"
+       style="fill:#00ff00;stroke:#000000;stroke-width:0.8056885px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 16.75179,4.6292323 0,-1.2043777 4.388554,1.9138057 L 16.916773,8.4403455 16.768288,6.9224996 9.4925262,9.859202 8.7006062,3.8703093 z"
        id="path4553"
        inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ff2a2a;stroke:#ff2a2a;stroke-width:0.55926508;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2991"
+       width="7.7452974"
+       height="4.8994069"
+       x="22.487007"
+       y="6.7972937"
+       ry="1.3399119" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ff9955;stroke:#ff9955;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path2993"
+       sodipodi:cx="20.108707"
+       sodipodi:cy="15.249569"
+       sodipodi:rx="6.8394179"
+       sodipodi:ry="6.8394179"
+       d="m 26.948125,15.249569 a 6.8394179,6.8394179 0 1 1 -13.678836,0 6.8394179,6.8394179 0 1 1 13.678836,0 z"
+       transform="matrix(0.27963255,0,0,0.27963255,20.679941,-0.09497298)" />
   </g>
 </svg>
