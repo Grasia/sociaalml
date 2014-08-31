@@ -35,6 +35,11 @@
 	</developers>
 	<dependencies>
 		<dependency>
+                  <groupId>org.apache.maven.doxia</groupId>
+                  <artifactId>doxia-module-markdown</artifactId>
+                  <version>1.5</version>
+                </dependency>
+		<dependency>
 			<groupId>net.sf.ingenme</groupId>
 			<artifactId>ingened</artifactId>
 			<version>${ingenme.version}</version>
@@ -537,6 +542,7 @@
 									<outputDirectory>${project.basedir}/target/generated/src/main/resources</outputDirectory>
 								</artifactItem>
 
+								
 								<artifactItem>
 									<groupId>net.sf.ingenme</groupId>
 									<artifactId>ingened</artifactId>
@@ -544,7 +550,16 @@
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<includes>pluginssrc/logograsia.jpg</includes>
-									<outputDirectory>${project.basedir}/target/generated/src/main/resources</outputDirectory>
+									<outputDirectory>target/generated/src/main/resources</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>net.sf.ingenme</groupId>
+									<artifactId>ingened</artifactId>
+									<version>${ingenme.version}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<includes>pluginssrc/htmldocpackage.png</includes>
+									<outputDirectory>target/generated/src/main/resources</outputDirectory>
 								</artifactItem>
 
 <artifactItem>
