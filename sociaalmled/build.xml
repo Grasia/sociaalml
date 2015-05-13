@@ -102,15 +102,17 @@ This is the macro definition for maven Ant task
 </target>
 
 <!--   Launchs the INGENIAS Editor    -->
-<target name="rungeneratedide" depends="compile">
-	<java fork="true" failonerror="true" maxmemory="300m"
-	      classname="ingenias.editor.IDE">
-		<classpath>			  
-			<pathelement path="${maven.build.outputDir}" />
-			<pathelement path="${mavenclasspath}" />              
-		</classpath>
-		
-	</java>
+
+
+
+<target name="sort1">
+<xslt in="src/main/resources/metamodel/metamodelINGENED.xml" out="salida.xml" style="sort.xslt"/>
+
+</target>
+
+<target name="sort">
+<xslt in="../../sociaal-codegit-old/sociaalmled/src/main/resources/metamodel/metamodelINGENED.xml" out="salida-old.xml" style="sort.xslt"/>
+
 </target>
 
 <target name="rungeneratedidespec" depends="compile">
