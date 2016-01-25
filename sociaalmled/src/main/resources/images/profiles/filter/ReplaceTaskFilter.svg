@@ -13,7 +13,7 @@
    height="32px"
    id="svg3041"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="ReplaceTaskFilter.svg">
   <defs
      id="defs3043">
@@ -32,17 +32,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="17.265626"
-     inkscape:cx="8.6197148"
-     inkscape:cy="13.650175"
+     inkscape:zoom="15.663835"
+     inkscape:cx="7.2909609"
+     inkscape:cy="14.305019"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1030"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata3046">
@@ -210,29 +210,88 @@
          id="rect4627-7-0-4-2-9-6-0-6"
          style="fill:#666666;fill-rule:evenodd;stroke:#000000;stroke-width:0.34066176;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
+    <rect
+       style="fill:#00ff00;fill-rule:evenodd;stroke:#00ff00;stroke-width:0.26576945px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect4491"
+       width="8.261322"
+       height="8.2177839"
+       x="2.1577106"
+       y="14.831855" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.31538916px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="2.4407058"
+       y="16.649563"
+       id="text4493"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4495"
+         x="2.4407058"
+         y="16.649563"
+         style="font-size:2.12615561px">T</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26576945px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 9.5700425,14.984238 0,1.469405"
+       id="path3980"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26576945px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 8.7863595,15.669961 1.5564805,0"
+       id="path3982"
+       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="2.432579"
-       y="22.03801"
+       x="2.9023242"
+       y="22.749069"
        id="text3008"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3010"
-         x="2.432579"
-         y="22.03801">A</tspan></text>
+         x="2.9023242"
+         y="22.749069">A</tspan></text>
+    <rect
+       style="fill:#00ff00;fill-rule:evenodd;stroke:#00ff00;stroke-width:0.26576945px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect4491-5"
+       width="8.261322"
+       height="8.2177839"
+       x="18.341486"
+       y="19.527893" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.31538916px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="18.624481"
+       y="21.345602"
+       id="text4493-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4495-0"
+         x="18.624481"
+         y="21.345602"
+         style="font-size:2.12615561px">T</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26576945px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 25.753819,19.680277 0,1.469405"
+       id="path3980-5"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26576945px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 24.970136,20.366 1.55648,0"
+       id="path3982-5"
+       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="18.881447"
-       y="29.161991"
+       x="19.224461"
+       y="27.601013"
        id="text3012"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3014"
-         x="18.881447"
-         y="29.161991">B</tspan></text>
+         x="19.224461"
+         y="27.601013">B</tspan></text>
     <g
+       transform="translate(-0.26671235,0.4371634)"
        id="g3024">
       <path
          inkscape:connector-curvature="0"
@@ -245,19 +304,16 @@
          d="m 17.201809,16.767422 0.347511,3.706787 -3.475113,0.347511"
          style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
-    <g
-       transform="matrix(-1.1392631,0,0,-1.123961,29.607772,47.197061)"
-       id="g3024-9">
-      <path
-         inkscape:connector-curvature="0"
-         id="path3018-5"
-         d="m 10.946606,17.925793 c 1.895046,-2.485422 4.918479,1.654815 6.197284,2.085067"
-         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path3022-0"
-         d="m 17.201809,16.767422 0.347511,3.706787 -3.475113,0.347511"
-         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    </g>
+    <path
+       style="fill:#ff0000;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 2.1706047,16.486557 8.8101043,6.639498"
+       id="path3138"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 11.236074,16.231192 1.9152396,23.253738"
+       id="path3140"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

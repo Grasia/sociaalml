@@ -174,15 +174,15 @@
       <player id="Human"/>
     </validplayers>
   </role>
-  <relationship id="IntervalClockTime">
+  <relationship id="TIStartTime">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mIntervalClockTime.png</small-icon>
-      <normal-icon>images/IntervalClockTime.png</normal-icon>
+      <small-icon>images/mTIStartTime.png</small-icon>
+      <normal-icon>images/TIStartTime.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -191,7 +191,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="IntervalClockTime" HorizontalAlignment="CENTER"/#
+##stereotype text="TIStartTime" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -208,11 +208,11 @@
       </layout>
     </graphics>
     <roles>
-      <role id="IntervalClockTimesource" maxcard="1" mincard="1" type="source"/>
-      <role id="IntervalClockTimetarget" maxcard="1" mincard="1" type="target"/>
+      <role id="TIStartTimesource" maxcard="1" mincard="1" type="source"/>
+      <role id="TIStartTimetarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="IntervalClockTimesource">
+  <role id="TIStartTimesource">
     <properties/>
     <graphics>
       <small-icon/>
@@ -222,7 +222,7 @@
       <player id="TimeInterval"/>
     </validplayers>
   </role>
-  <role id="IntervalClockTimetarget">
+  <role id="TIStartTimetarget">
     <properties/>
     <graphics>
       <small-icon/>
@@ -290,15 +290,15 @@
       <player id="Medication"/>
     </validplayers>
   </role>
-  <relationship id="LiveIn">
+  <relationship id="socialRelations">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mLiveIn.png</small-icon>
-      <normal-icon>images/LiveIn.png</normal-icon>
+      <small-icon>images/msocialRelations.png</small-icon>
+      <normal-icon>images/socialRelations.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -307,7 +307,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="LiveIn" HorizontalAlignment="CENTER"/#
+##stereotype text="socialRelations" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -324,11 +324,11 @@
       </layout>
     </graphics>
     <roles>
-      <role id="LiveInsource" maxcard="1" mincard="1" type="source"/>
-      <role id="LiveIntarget" maxcard="1" mincard="1" type="target"/>
+      <role id="socialRelationssource" maxcard="1" mincard="1" type="source"/>
+      <role id="socialRelationstarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="LiveInsource">
+  <role id="socialRelationssource">
     <properties/>
     <graphics>
       <small-icon/>
@@ -338,14 +338,14 @@
       <player id="PersonalInfo"/>
     </validplayers>
   </role>
-  <role id="LiveIntarget">
+  <role id="socialRelationstarget">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="SBuilding"/>
+      <player id="SocialNetwork"/>
     </validplayers>
   </role>
   <relationship id="WorkAs">
@@ -406,15 +406,15 @@
       <player id="Profession"/>
     </validplayers>
   </role>
-  <relationship id="socialRelations">
+  <relationship id="LiveIn">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/msocialRelations.png</small-icon>
-      <normal-icon>images/socialRelations.png</normal-icon>
+      <small-icon>images/mLiveIn.png</small-icon>
+      <normal-icon>images/LiveIn.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -423,7 +423,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="socialRelations" HorizontalAlignment="CENTER"/#
+##stereotype text="LiveIn" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -440,11 +440,11 @@
       </layout>
     </graphics>
     <roles>
-      <role id="socialRelationssource" maxcard="1" mincard="1" type="source"/>
-      <role id="socialRelationstarget" maxcard="1" mincard="1" type="target"/>
+      <role id="LiveInsource" maxcard="1" mincard="1" type="source"/>
+      <role id="LiveIntarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="socialRelationssource">
+  <role id="LiveInsource">
     <properties/>
     <graphics>
       <small-icon/>
@@ -454,14 +454,72 @@
       <player id="PersonalInfo"/>
     </validplayers>
   </role>
-  <role id="socialRelationstarget">
+  <role id="LiveIntarget">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="SocialNetwork"/>
+      <player id="SBuilding"/>
+    </validplayers>
+  </role>
+  <relationship id="ActivityAttached">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mActivityAttached.png</small-icon>
+      <normal-icon>images/ActivityAttached.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="ActivityAttached" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="ActivityAttachedsource" maxcard="1" mincard="1" type="source"/>
+      <role id="ActivityAttachedtarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="ActivityAttachedsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="EventProcessor"/>
+    </validplayers>
+  </role>
+  <role id="ActivityAttachedtarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BActivity"/>
     </validplayers>
   </role>
   <relationship id="ConditionNeeded">
@@ -580,64 +638,6 @@
       <player id="BEvent"/>
     </validplayers>
   </role>
-  <relationship id="ActivityAttached">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mActivityAttached.png</small-icon>
-      <normal-icon>images/ActivityAttached.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="ActivityAttached" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="ActivityAttachedsource" maxcard="1" mincard="1" type="source"/>
-      <role id="ActivityAttachedtarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="ActivityAttachedsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="EventProcessor"/>
-    </validplayers>
-  </role>
-  <role id="ActivityAttachedtarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="BActivity"/>
-    </validplayers>
-  </role>
   <relationship id="Connects">
     <properties>
       <preferredorder>
@@ -754,64 +754,6 @@
       <player id="SFloor"/>
     </validplayers>
   </role>
-  <relationship id="AllowedTask">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mAllowedTask.png</small-icon>
-      <normal-icon>images/AllowedTask.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="AllowedTask" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="AllowedTasksource" maxcard="1" mincard="1" type="source"/>
-      <role id="AllowedTasktarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="AllowedTasksource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="FTaskSelectorFilter"/>
-    </validplayers>
-  </role>
-  <role id="AllowedTasktarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="BTask"/>
-    </validplayers>
-  </role>
   <relationship id="tool">
     <properties>
       <preferredorder>
@@ -868,6 +810,64 @@
     </graphics>
     <validplayers>
       <player id="ETool"/>
+    </validplayers>
+  </role>
+  <relationship id="AllowedTask">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mAllowedTask.png</small-icon>
+      <normal-icon>images/AllowedTask.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="AllowedTask" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="AllowedTasksource" maxcard="1" mincard="1" type="source"/>
+      <role id="AllowedTasktarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="AllowedTasksource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="FTaskSelectorFilter"/>
+    </validplayers>
+  </role>
+  <role id="AllowedTasktarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BTask"/>
     </validplayers>
   </role>
   <relationship id="FPrecondition">
@@ -986,6 +986,64 @@
       <player id="AESub"/>
     </validplayers>
   </role>
+  <relationship id="aemd_op1">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/maemd_op1.png</small-icon>
+      <normal-icon>images/aemd_op1.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="aemd_op1" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="aemd_op1source" maxcard="1" mincard="1" type="source"/>
+      <role id="aemd_op1target" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="aemd_op1source">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="AEMulDiv"/>
+    </validplayers>
+  </role>
+  <role id="aemd_op1target">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="AESub"/>
+    </validplayers>
+  </role>
   <relationship id="aeas_op1">
     <properties>
       <preferredorder>
@@ -1042,64 +1100,6 @@
     </graphics>
     <validplayers>
       <player id="ArithmeticExpression"/>
-    </validplayers>
-  </role>
-  <relationship id="aeinv_op">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/maeinv_op.png</small-icon>
-      <normal-icon>images/aeinv_op.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="aeinv_op" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="aeinv_opsource" maxcard="1" mincard="1" type="source"/>
-      <role id="aeinv_optarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="aeinv_opsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="AEInv"/>
-    </validplayers>
-  </role>
-  <role id="aeinv_optarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="EASubSubSub"/>
     </validplayers>
   </role>
   <relationship id="aemd_op2">
@@ -1160,15 +1160,15 @@
       <player id="AESubSub"/>
     </validplayers>
   </role>
-  <relationship id="aemd_op1">
+  <relationship id="aeinv_op">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/maemd_op1.png</small-icon>
-      <normal-icon>images/aemd_op1.png</normal-icon>
+      <small-icon>images/maeinv_op.png</small-icon>
+      <normal-icon>images/aeinv_op.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -1177,7 +1177,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="aemd_op1" HorizontalAlignment="CENTER"/#
+##stereotype text="aeinv_op" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -1194,86 +1194,28 @@
       </layout>
     </graphics>
     <roles>
-      <role id="aemd_op1source" maxcard="1" mincard="1" type="source"/>
-      <role id="aemd_op1target" maxcard="1" mincard="1" type="target"/>
+      <role id="aeinv_opsource" maxcard="1" mincard="1" type="source"/>
+      <role id="aeinv_optarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="aemd_op1source">
+  <role id="aeinv_opsource">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="AEMulDiv"/>
+      <player id="AEInv"/>
     </validplayers>
   </role>
-  <role id="aemd_op1target">
+  <role id="aeinv_optarget">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="AESub"/>
-    </validplayers>
-  </role>
-  <relationship id="InitialLocation">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mInitialLocation.png</small-icon>
-      <normal-icon>images/InitialLocation.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="InitialLocation" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="InitialLocationsource" maxcard="1" mincard="1" type="source"/>
-      <role id="InitialLocationtarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="InitialLocationsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="HumanInitialization"/>
-    </validplayers>
-  </role>
-  <role id="InitialLocationtarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="SSpatial"/>
+      <player id="EASubSubSub"/>
     </validplayers>
   </role>
   <relationship id="InitialActivity">
@@ -1334,15 +1276,15 @@
       <player id="BActivity"/>
     </validplayers>
   </role>
-  <relationship id="CameraFaceToHuman">
+  <relationship id="InitialDate">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mCameraFaceToHuman.png</small-icon>
-      <normal-icon>images/CameraFaceToHuman.png</normal-icon>
+      <small-icon>images/mInitialDate.png</small-icon>
+      <normal-icon>images/InitialDate.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -1351,7 +1293,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="CameraFaceToHuman" HorizontalAlignment="CENTER"/#
+##stereotype text="InitialDate" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -1368,28 +1310,28 @@
       </layout>
     </graphics>
     <roles>
-      <role id="CameraFaceToHumansource" maxcard="1" mincard="1" type="source"/>
-      <role id="CameraFaceToHumantarget" maxcard="1" mincard="1" type="target"/>
+      <role id="InitialDatesource" maxcard="1" mincard="1" type="source"/>
+      <role id="InitialDatetarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="CameraFaceToHumansource">
+  <role id="InitialDatesource">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="CameraInit"/>
+      <player id="WorldInitialization"/>
     </validplayers>
   </role>
-  <role id="CameraFaceToHumantarget">
+  <role id="InitialDatetarget">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="Human"/>
+      <player id="SDate"/>
     </validplayers>
   </role>
   <relationship id="RelatedHuman">
@@ -1450,15 +1392,15 @@
       <player id="Human"/>
     </validplayers>
   </role>
-  <relationship id="InitialDate">
+  <relationship id="InitialLocation">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mInitialDate.png</small-icon>
-      <normal-icon>images/InitialDate.png</normal-icon>
+      <small-icon>images/mInitialLocation.png</small-icon>
+      <normal-icon>images/InitialLocation.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -1467,7 +1409,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="InitialDate" HorizontalAlignment="CENTER"/#
+##stereotype text="InitialLocation" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -1484,28 +1426,86 @@
       </layout>
     </graphics>
     <roles>
-      <role id="InitialDatesource" maxcard="1" mincard="1" type="source"/>
-      <role id="InitialDatetarget" maxcard="1" mincard="1" type="target"/>
+      <role id="InitialLocationsource" maxcard="1" mincard="1" type="source"/>
+      <role id="InitialLocationtarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="InitialDatesource">
+  <role id="InitialLocationsource">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="WorldInitialization"/>
+      <player id="HumanInitialization"/>
     </validplayers>
   </role>
-  <role id="InitialDatetarget">
+  <role id="InitialLocationtarget">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="SDate"/>
+      <player id="SSpatial"/>
+    </validplayers>
+  </role>
+  <relationship id="CameraFaceToHuman">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mCameraFaceToHuman.png</small-icon>
+      <normal-icon>images/CameraFaceToHuman.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="CameraFaceToHuman" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="CameraFaceToHumansource" maxcard="1" mincard="1" type="source"/>
+      <role id="CameraFaceToHumantarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="CameraFaceToHumansource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="CameraInit"/>
+    </validplayers>
+  </role>
+  <role id="CameraFaceToHumantarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="Human"/>
     </validplayers>
   </role>
   <relationship id="InitializedSymptom">
@@ -1682,6 +1682,64 @@
       <player id="Human"/>
     </validplayers>
   </role>
+  <relationship id="ActionHappeningAfterwards">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mActionHappeningAfterwards.png</small-icon>
+      <normal-icon>images/ActionHappeningAfterwards.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="ActionHappeningAfterwards" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="ActionHappeningAfterwardssource" maxcard="1" mincard="1" type="source"/>
+      <role id="ActionHappeningAfterwardstarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="ActionHappeningAfterwardssource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="ConsecutiveActions"/>
+    </validplayers>
+  </role>
+  <role id="ActionHappeningAfterwardstarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="AnotherActionHappens"/>
+    </validplayers>
+  </role>
   <relationship id="DeonticAssignement">
     <properties>
       <preferredorder>
@@ -1856,64 +1914,6 @@
       <player id="BTask"/>
     </validplayers>
   </role>
-  <relationship id="ActionHappeningAfterwards">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mActionHappeningAfterwards.png</small-icon>
-      <normal-icon>images/ActionHappeningAfterwards.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="ActionHappeningAfterwards" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="ActionHappeningAfterwardssource" maxcard="1" mincard="1" type="source"/>
-      <role id="ActionHappeningAfterwardstarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="ActionHappeningAfterwardssource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="ConsecutiveActions"/>
-    </validplayers>
-  </role>
-  <role id="ActionHappeningAfterwardstarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="AnotherActionHappens"/>
-    </validplayers>
-  </role>
   <object id="AnotherActionHappens" inherits="NormHoldingCondition"
     instanciable="yes" keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -2078,36 +2078,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="MEDIUMSympLevelState" inherits="SymptomLevelState"
@@ -2399,50 +2399,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
-  <relationship id="Bosses">
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mBosses.png</small-icon>
-      <normal-icon>images/Bosses.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="Bosses" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="SocialSourceMRsource" maxcard="1" mincard="1" type="source"/>
-      <role id="SocialTargetMRtarget" maxcard="N" mincard="1" type="target"/>
-    </roles>
-  </relationship>
   <object id="SRoom" inherits="SSpatial" instanciable="no" keyfield="id"
     package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -2678,42 +2634,43 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="PutOnTask"/>
       <object id="DropObj"/>
       <object id="BGetUpFromBed"/>
+      <object id="BLeaveTask"/>
     </objects>
     <relationships>
       <relationship id="NextSeqTask"/>
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="WaitTask" inherits="BSimpleDurationTask"
@@ -2868,41 +2825,42 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="PutOnTask"/>
       <object id="DropObj"/>
       <object id="BGetUpFromBed"/>
+      <object id="BLeaveTask"/>
     </objects>
     <relationships>
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="GSymptom" instanciable="yes" keyfield="id" package="">
@@ -3066,8 +3024,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mFAlternative.png</small-icon>
-      <normal-icon>images/FAlternative.png</normal-icon>
+      <small-icon>images/profiles/filter/AltFilter.png</small-icon>
+      <normal-icon>images/profiles/filter/AltFilter.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -3075,9 +3033,12 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <views>
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="FAlternative" HorizontalAlignment="CENTER"/#
-##/vbox#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/profiles/filter/AltFilter.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
           <content id="LABEL">
@@ -3093,8 +3054,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
     <roles>
-      <role id="FilterNodeMRsource" maxcard="1" mincard="1" type="source"/>
-      <role id="FilterNodeMRtarget" maxcard="1" mincard="1" type="target"/>
+      <role id="SourceFiltersource" maxcard="1" mincard="1" type="source"/>
+      <role id="TargetFiltertarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
   <metamodel icon="images/mInteractionDiagram.png"
@@ -3132,36 +3093,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="OpenTask" inherits="BSimpleTask" instanciable="yes"
@@ -3174,7 +3135,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <defaultvalues/>
         <label lang="en">Description</label>
       </property>
-      <property id="OpenCloseObjField" iscollection="yes"
+      <property id="OpenCloseObjField" iscollection="no"
         ismetaclassinstance="yes" preferredwidget="" type="EPhysicalEntity">
         <label lang="en">Description</label>
       </property>
@@ -3685,6 +3646,11 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##linklabel id="SymptomEvoField"/#
 ##/panel#
 ##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="("/#
+##label id="PDSymptomTypeField"/#
+##label Text=")"/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
 ##iconlabel icon="images/profiles/DiseaseProfile/Symptom.png" /#
 ##/panel#
 ##/vbox#
@@ -3851,6 +3817,53 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
+  <relationship id="isSpouseOf">
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/profiles/SocialProfile/spouse.png</small-icon>
+      <normal-icon>images/profiles/SocialProfile/spouse.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/profiles/SocialProfile/spouse.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="SocialSourceMRsource" maxcard="1" mincard="1" type="source"/>
+      <role id="SocialTargetMRtarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
   <relationship id="NextSeqTask">
     <properties>
       <property id="Description"
@@ -4255,7 +4268,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <defaultvalues/>
         <label lang="en">Description</label>
       </property>
-      <property id="OpenCloseObjField" iscollection="yes"
+      <property id="OpenCloseObjField" iscollection="no"
         ismetaclassinstance="yes" preferredwidget="" type="EPhysicalEntity">
         <label lang="en">Description</label>
       </property>
@@ -4324,7 +4337,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         </defaultvalues>
         <label lang="en">Description</label>
       </property>
-      <property id="ProffesionNameField"
+      <property id="ProfessionNameField"
         preferredwidget="ingenias.editor.widget.CustomJTextField" type="java.lang.String">
         <defaultvalues>
           <value>LeftWrist</value>
@@ -4344,8 +4357,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <preferredorder>
         <order>id</order>
         <order>Description</order>
-        <order>ProffesionNameField</order>
         <order>ActiveWorkerField</order>
+        <order>ProfessionNameField</order>
       </preferredorder>
     </properties>
     <graphics>
@@ -4355,7 +4368,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <properties>
           <property id="id"/>
           <property id="ActiveWorkerField"/>
-          <property id="ProffesionNameField"/>
+          <property id="ProfessionNameField"/>
         </properties>
         <views>
           <content id="INGENIAS">
@@ -4378,10 +4391,10 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 
 ##panel Background="white" VerticalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
 ##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
-##label Text="Proffesion="/#
+##label Text="Profession="/#
 ##/panel#
 ##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
-##label id="ProffesionNameField"/#
+##label id="ProfessionNameField"/#
 ##/panel#
 ##/panel#
 
@@ -4756,6 +4769,53 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
+  <relationship id="isCaregiverOf">
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/profiles/SocialProfile/Caregiver.png</small-icon>
+      <normal-icon>images/profiles/SocialProfile/Caregiver.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/profiles/SocialProfile/Caregiver.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="SocialSourceMRsource" maxcard="1" mincard="1" type="source"/>
+      <role id="SocialTargetMRtarget" maxcard="N" mincard="1" type="target"/>
+    </roles>
+  </relationship>
   <object id="CDayOfTheWeek" inherits="Condition" instanciable="yes"
     keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -5392,7 +5452,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <defaultvalues/>
         <label lang="en">Description</label>
       </property>
-      <property id="ParticipantObject" iscollection="yes"
+      <property id="ParticipantObject" iscollection="no"
         ismetaclassinstance="yes"
         preferredwidget="ingenias.editor.widget.CustomJComboBox" type="EPhysicalEntity">
         <label lang="en">Description</label>
@@ -5718,40 +5778,40 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="TimeInterval"/>
     </objects>
     <relationships>
-      <relationship id="NextTimeInterval"/>
+      <relationship id="NextTI"/>
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="DFixedSensor" inherits="EFixedDevice" instanciable="no"
@@ -5976,10 +6036,16 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         preferredwidget="ingenias.editor.widget.CustomJComboBox" type="ActivityDiagram">
         <label lang="en">Description</label>
       </property>
+      <property id="DefaultActivityField" iscollection="no"
+        ismetamodelinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJComboBox" type="SequentialTaskDiagram">
+        <label lang="en">Description</label>
+      </property>
       <preferredorder>
         <order>id</order>
         <order>Description</order>
         <order>ActivitySpecField</order>
+        <order>DefaultActivityField</order>
       </preferredorder>
     </properties>
     <graphics>
@@ -5989,6 +6055,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <properties>
           <property id="id"/>
           <property id="ActivitySpecField"/>
+          <property id="DefaultActivityField"/>
         </properties>
         <views>
           <content id="INGENIAS">
@@ -6010,6 +6077,11 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##linepanel Background="white"/#
 ##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
 ##linklabel id="ActivitySpecField"/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="("/#
+##linklabel id="DefaultActivityField"/#
+##label Text=")"/#
 ##/panel#
 ##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
 ##iconlabel icon="images/profiles/ADLProfile/timeInterval.png" /#
@@ -6087,36 +6159,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="GoIntoBed" inherits="BSimpleDurationTask"
@@ -6765,36 +6837,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="SocialNetwork" instanciable="yes" keyfield="id" package="">
@@ -7169,6 +7241,50 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
+  <role id="TargetFiltertarget">
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+      </preferredorder>
+    </properties>
+    <validplayers>
+      <player id="FReplaceTaskFilter"/>
+      <player id="FUnableFilter"/>
+      <player id="FModifyFilter"/>
+    </validplayers>
+  </role>
+  <role id="TargetFiltersource">
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+      </preferredorder>
+    </properties>
+    <validplayers>
+      <player id="FReplaceTaskFilter"/>
+      <player id="FUnableFilter"/>
+      <player id="FModifyFilter"/>
+    </validplayers>
+  </role>
   <object id="BSimpleDurationTask" inherits="BSimpleTask"
     instanciable="no" keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -7293,6 +7409,24 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##/htmllabel#
 ##/panel#
 ##label Foreground="blue" icon="images/profiles/DiseaseProfile/MedicationTime.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+</content>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)" Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="("/#
+##label id="ClockTimeField"/#
+##label Text=")"/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##iconlabel icon="images/profiles/DiseaseProfile/MedicationTime.png" /#
+##/panel#
+##/vbox#
 ##/panel#
 </content>
         </views>
@@ -8319,8 +8453,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="PartOfBody"/>
       <object id="WorldInitialization"/>
       <object id="SBedroom"/>
-      <object id="SCorridor"/>
       <object id="InitialPreDefPos"/>
+      <object id="SCorridor"/>
       <object id="SArea"/>
       <object id="ESmartPhone"/>
       <object id="HumanInitialization"/>
@@ -8343,36 +8477,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="BSimpleTask" inherits="BTask" instanciable="no"
@@ -8534,50 +8668,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
-  <relationship id="WifeOf">
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mWifeOf.png</small-icon>
-      <normal-icon>images/WifeOf.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="WifeOf" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="SocialSourceMRsource" maxcard="1" mincard="1" type="source"/>
-      <role id="SocialTargetMRtarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
   <metamodel icon="images/mSocialSpecDiagram.png" id="SocialSpecDiagram" name="">
     <properties>
       <property id="Description"
@@ -8602,44 +8692,42 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="PersonalInfo"/>
     </objects>
     <relationships>
-      <relationship id="CaregiverOf"/>
-      <relationship id="WifeOf"/>
-      <relationship id="Bosses"/>
-      <relationship id="HusbandOf"/>
-      <relationship id="Parents"/>
+      <relationship id="isSpouseOf"/>
+      <relationship id="isParentOf"/>
+      <relationship id="isCaregiverOf"/>
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="BEObjectMoving" inherits="VisionEvent" instanciable="yes"
@@ -9128,36 +9216,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="EWearable" inherits="EMobileObject" instanciable="no"
@@ -9392,6 +9480,93 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
+  <object id="BLeaveTask" inherits="BSimpleDurationTask"
+    instanciable="yes" keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
+    <description/>
+    <recommendation/>
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <property id="PysicalMobObjField" iscollection="no"
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJComboBox" type="EMobilePhysicalEntity">
+        <label lang="en">Description</label>
+      </property>
+      <property id="DestinyField" iscollection="no"
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJComboBox" type="EPhysicalEntity">
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>BTaskDuration</order>
+        <order>PysicalMobObjField</order>
+        <order>Description</order>
+        <order>CanBeInterruptedField</order>
+        <order>DestinyField</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/behaviour/tasks/Leave.png</small-icon>
+      <normal-icon>images/behaviour/tasks/Leave.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+          <property id="PysicalMobObjField"/>
+          <property id="DestinyField"/>
+          <property id="BTaskDuration"/>
+          <property id="CanBeInterruptedField"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/behaviour/tasks/Leave.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+</content>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)" Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+
+##panel Background="white" VerticalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="PysicalMobObjField"/#
+##label Text=" in "/#
+##label id="DestinyField"/#
+##/panel#
+
+##panel Background="white" VerticalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="For "/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="BTaskDuration"/#
+##/panel#
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text=" seconds"/#
+##/panel#
+##/panel#
+
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##iconlabel icon="images/behaviour/tasks/Leave.png" /#
+##/panel#
+##/vbox#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+  </object>
   <object id="Behaviour" instanciable="no" keyfield="id" package="">
     <description/>
     <recommendation/>
@@ -9569,12 +9744,14 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##linepanel Background="white"/#
 
 ##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
-##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
 ##label Text="Seed="/#
-##/panel#
-##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
 ##label id="SimulationSeedField"/#
 ##/panel#
+
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="("/#
+##label id="HouseTypeField"/#
+##label Text=")"/#
 ##/panel#
 
 ##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
@@ -9868,6 +10045,23 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##label Foreground="blue" icon="images/profiles/DiseaseProfile/MedInjection.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)" Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="Amount="/#
+##label id="DosesNumberField"/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##iconlabel icon="images/profiles/DiseaseProfile/MedInjection.png" /#
+##/panel#
+##/vbox#
+##/panel#
+</content>
         </views>
       </layout>
     </graphics>
@@ -10081,36 +10275,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="SymptomChangedEvent" inherits="EPublicEvent"
@@ -10414,46 +10608,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
-  <role id="FilterNodeMRtarget">
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-      </preferredorder>
-    </properties>
-    <validplayers>
-      <player id="FTaskFilter"/>
-    </validplayers>
-  </role>
-  <role id="FilterNodeMRsource">
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-      </preferredorder>
-    </properties>
-    <validplayers>
-      <player id="FTaskFilter"/>
-    </validplayers>
-  </role>
   <object id="AEMulDiv" inherits="AESub" instanciable="no" keyfield="id"
     package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -10677,6 +10831,23 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##label Foreground="blue" icon="images/profiles/DiseaseProfile/Medication.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)" Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="Name="/#
+##label id="MedicinesNameField"/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##iconlabel icon="images/profiles/DiseaseProfile/Medication.png" /#
+##/panel#
+##/vbox#
+##/panel#
+</content>
         </views>
       </layout>
     </graphics>
@@ -10712,36 +10883,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="Staircase" inherits="SVerticalSpace" instanciable="yes"
@@ -11008,36 +11179,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <metamodel icon="images/mActivityDiagram.png" id="ActivityDiagram" name="">
@@ -11076,82 +11247,38 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
-  <relationship id="HusbandOf">
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mHusbandOf.png</small-icon>
-      <normal-icon>images/HusbandOf.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="HusbandOf" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="SocialSourceMRsource" maxcard="1" mincard="1" type="source"/>
-      <role id="SocialTargetMRtarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
   <object id="Shoes" inherits="EClothing" instanciable="yes"
     keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -11372,36 +11499,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="SitDown" inherits="BSimpleDurationTask" instanciable="yes"
@@ -11575,50 +11702,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
-  <relationship id="NextTimeInterval">
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mNextTimeInterval.png</small-icon>
-      <normal-icon>images/NextTimeInterval.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="NextTimeInterval" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="ListTimeIntervalNodesource" maxcard="1" mincard="1" type="source"/>
-      <role id="ListTimeIntervalNodetarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
   <object id="FUnableFilter" inherits="FTaskFilter" instanciable="yes"
     keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -11733,6 +11816,53 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
+  <relationship id="isParentOf">
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/profiles/SocialProfile/parent.png</small-icon>
+      <normal-icon>images/profiles/SocialProfile/parent.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/profiles/SocialProfile/parent.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="SocialSourceMRsource" maxcard="1" mincard="1" type="source"/>
+      <role id="SocialTargetMRtarget" maxcard="N" mincard="1" type="target"/>
+    </roles>
+  </relationship>
   <object id="BUseTask" inherits="BSimpleDurationTask"
     instanciable="yes" keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -12270,6 +12400,29 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##label Foreground="blue" icon="images/behaviour/events/event.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)" Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="Magnitude = "/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="EventPriorityField"/#
+##/panel#
+##/panel#
+
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##iconlabel icon="images/behaviour/events/event.png" /#
+##/panel#
+##/vbox#
+##/panel#
+</content>
         </views>
       </layout>
     </graphics>
@@ -12447,8 +12600,20 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <label lang="en">Description</label>
       </property>
       <property id="DosesNumberField"
-        preferredwidget="ingenias.editor.widget.CustomJTextField" type="java.lang.Float">
-        <defaultvalues/>
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="java.lang.String">
+        <defaultvalues>
+          <value>LeftWrist</value>
+          <value>RightWrist</value>
+          <value>LeftHand</value>
+          <value>RightHand</value>
+          <value>LeftAnkle</value>
+          <value>RightAnkle</value>
+          <value>Head</value>
+          <value>Chest</value>
+          <value>Back</value>
+          <value>LeftHip</value>
+          <value>RightHip</value>
+        </defaultvalues>
         <label lang="en">Description</label>
       </property>
       <preferredorder>
@@ -12475,6 +12640,23 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##/htmllabel#
 ##/panel#
 ##label Foreground="blue" icon="images/profiles/DiseaseProfile/MedIntake.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+</content>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)" Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="Amount="/#
+##label id="DosesNumberField"/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##iconlabel icon="images/profiles/DiseaseProfile/MedIntake.png" /#
+##/panel#
+##/vbox#
 ##/panel#
 </content>
         </views>
@@ -12561,8 +12743,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mFalseFlow.png</small-icon>
-      <normal-icon>images/FalseFlow.png</normal-icon>
+      <small-icon>images/behaviour/activities/False.png</small-icon>
+      <normal-icon>images/behaviour/activities/False.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -12570,9 +12752,12 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <views>
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="FalseFlow" HorizontalAlignment="CENTER"/#
-##/vbox#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/behaviour/activities/False.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
           <content id="LABEL">
@@ -13088,36 +13273,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <metamodel icon="images/mParkinsonSpecDiagram.png"
@@ -13150,36 +13335,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="EASubSubSub" inherits="AESubSub" instanciable="no"
@@ -13262,6 +13447,50 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
+  <relationship id="NextTI">
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mNextTI.png</small-icon>
+      <normal-icon>images/NextTI.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="NextTI" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="ListTimeIntervalNodesource" maxcard="1" mincard="1" type="source"/>
+      <role id="ListTimeIntervalNodetarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
   <object id="EFixedPhysicalEntity" inherits="EPhysicalEntity"
     instanciable="no" keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -13622,50 +13851,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
-  <relationship id="Parents">
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mParents.png</small-icon>
-      <normal-icon>images/Parents.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="Parents" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="SocialSourceMRsource" maxcard="1" mincard="1" type="source"/>
-      <role id="SocialTargetMRtarget" maxcard="2" mincard="1" type="target"/>
-    </roles>
-  </relationship>
   <object id="BActivity" inherits="Behaviour" instanciable="yes"
     keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -13909,8 +14094,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mNextFilter.png</small-icon>
-      <normal-icon>images/NextFilter.png</normal-icon>
+      <small-icon>images/profiles/filter/NextFilter.png</small-icon>
+      <normal-icon>images/profiles/filter/NextFilter.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -13918,9 +14103,12 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <views>
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="NextFilter" HorizontalAlignment="CENTER"/#
-##/vbox#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/profiles/filter/NextFilter.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
           <content id="LABEL">
@@ -13936,8 +14124,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
     <roles>
-      <role id="FilterNodeMRsource" maxcard="1" mincard="1" type="source"/>
-      <role id="FilterNodeMRtarget" maxcard="1" mincard="1" type="target"/>
+      <role id="SourceFiltersource" maxcard="1" mincard="1" type="source"/>
+      <role id="TargetFiltertarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
   <object id="AEDiv" inherits="AEMulDiv" instanciable="yes"
@@ -14218,36 +14406,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <relationship id="TrueFlow">
@@ -14263,8 +14451,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mTrueFlow.png</small-icon>
-      <normal-icon>images/TrueFlow.png</normal-icon>
+      <small-icon>images/behaviour/activities/True.png</small-icon>
+      <normal-icon>images/behaviour/activities/True.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -14272,9 +14460,12 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <views>
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="TrueFlow" HorizontalAlignment="CENTER"/#
-##/vbox#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/behaviour/activities/True.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
           <content id="LABEL">
@@ -14669,6 +14860,15 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##label Foreground="blue" icon="images/behaviour/activities/ifFlowOperator.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)" Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##iconlabel icon="images/behaviour/activities/ifFlowOperator.png" /#
+##/panel#
+##/vbox#
+##/panel#
+</content>
         </views>
       </layout>
     </graphics>
@@ -14683,7 +14883,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <defaultvalues/>
         <label lang="en">Description</label>
       </property>
-      <property id="ParticipantObject" iscollection="yes"
+      <property id="ParticipantObject" iscollection="no"
         ismetaclassinstance="yes"
         preferredwidget="ingenias.editor.widget.CustomJComboBox" type="EPhysicalEntity">
         <label lang="en">Description</label>
@@ -14778,36 +14978,36 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProducesEvent"/>
       <relationship id="cond"/>
       <relationship id="ProfileOf"/>
-      <relationship id="IntervalClockTime"/>
+      <relationship id="TIStartTime"/>
       <relationship id="med"/>
-      <relationship id="LiveIn"/>
-      <relationship id="WorkAs"/>
       <relationship id="socialRelations"/>
+      <relationship id="WorkAs"/>
+      <relationship id="LiveIn"/>
+      <relationship id="ActivityAttached"/>
       <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
-      <relationship id="ActivityAttached"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
-      <relationship id="AllowedTask"/>
       <relationship id="tool"/>
+      <relationship id="AllowedTask"/>
       <relationship id="FPrecondition"/>
       <relationship id="aeas_op2"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aeinv_op"/>
-      <relationship id="aemd_op2"/>
       <relationship id="aemd_op1"/>
-      <relationship id="InitialLocation"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op2"/>
+      <relationship id="aeinv_op"/>
       <relationship id="InitialActivity"/>
-      <relationship id="CameraFaceToHuman"/>
-      <relationship id="RelatedHuman"/>
       <relationship id="InitialDate"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="CameraFaceToHuman"/>
       <relationship id="InitializedSymptom"/>
       <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
+      <relationship id="ActionHappeningAfterwards"/>
       <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
       <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
     </relationships>
   </metamodel>
   <object id="EMedicine" inherits="EMobileObject" instanciable="yes"
@@ -14902,54 +15102,31 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##label Foreground="blue" icon="images/profiles/DiseaseProfile/PDStage.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)" Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##linklabel id="MedicationTimeSpecField"/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text="("/#
+##label id="NamePDStageField"/#
+##label Text=")"/#
+##/panel#
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##iconlabel icon="images/profiles/DiseaseProfile/PDStage.png" /#
+##/panel#
+##/vbox#
+##/panel#
+</content>
         </views>
       </layout>
     </graphics>
   </object>
-  <relationship id="CaregiverOf">
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mCaregiverOf.png</small-icon>
-      <normal-icon>images/CaregiverOf.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="CaregiverOf" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="SocialSourceMRsource" maxcard="1" mincard="1" type="source"/>
-      <role id="SocialTargetMRtarget" maxcard="N" mincard="1" type="target"/>
-    </roles>
-  </relationship>
   <object id="TapXYTask" inherits="BSimpleTask" instanciable="yes"
     keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -15070,53 +15247,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
-  <object id="BEObjOutFielOfVision" inherits="VisionEvent"
-    instanciable="yes" keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
-    <description/>
-    <recommendation/>
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <property id="ParticipantObject" iscollection="yes"
-        ismetaclassinstance="yes"
-        preferredwidget="ingenias.editor.widget.CustomJComboBox" type="EPhysicalEntity">
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-        <order>ParticipantObject</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mBEObjOutFielOfVision.png</small-icon>
-      <normal-icon>images/BEObjOutFielOfVision.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-          <property id="ParticipantObject"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)"#
-##stereotype text="BEObjOutFielOfVision" HorizontalAlignment="CENTER"/#
-##/panel#
-##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)"#
-##label id="Id"/#
-##/panel#
-##linepanel Background="white"/#
-##/vbox#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-  </object>
   <object id="BENewObjInFieldOfVision" inherits="VisionEvent"
     instanciable="yes" keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -15127,7 +15257,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <defaultvalues/>
         <label lang="en">Description</label>
       </property>
-      <property id="ParticipantObject" iscollection="yes"
+      <property id="ParticipantObject" iscollection="no"
         ismetaclassinstance="yes"
         preferredwidget="ingenias.editor.widget.CustomJComboBox" type="EPhysicalEntity">
         <label lang="en">Description</label>
@@ -15152,6 +15282,53 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
 ##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)"#
 ##stereotype text="BENewObjInFieldOfVision" HorizontalAlignment="CENTER"/#
+##/panel#
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)"#
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##/vbox#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+  </object>
+  <object id="BEObjOutFielOfVision" inherits="VisionEvent"
+    instanciable="yes" keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
+    <description/>
+    <recommendation/>
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <property id="ParticipantObject" iscollection="no"
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJComboBox" type="EPhysicalEntity">
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+        <order>ParticipantObject</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mBEObjOutFielOfVision.png</small-icon>
+      <normal-icon>images/BEObjOutFielOfVision.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+          <property id="ParticipantObject"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)"#
+##stereotype text="BEObjOutFielOfVision" HorizontalAlignment="CENTER"/#
 ##/panel#
 ##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)"#
 ##label id="Id"/#
@@ -15447,6 +15624,95 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       </layout>
     </graphics>
   </object>
+  <role id="SourceFiltertarget">
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+      </preferredorder>
+    </properties>
+    <validplayers>
+      <player id="FTaskSelectorFilter"/>
+      <player id="FModifyFilter"/>
+    </validplayers>
+  </role>
+  <role id="SourceFiltersource">
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+      </preferredorder>
+    </properties>
+    <validplayers>
+      <player id="FTaskSelectorFilter"/>
+      <player id="FModifyFilter"/>
+    </validplayers>
+  </role>
+  <object id="BECollision" inherits="TouchEvent" instanciable="yes"
+    keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
+    <description/>
+    <recommendation/>
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <property id="ParticipantObject" iscollection="no"
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJComboBox" type="EPhysicalEntity">
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+        <order>ParticipantObject</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mBECollision.png</small-icon>
+      <normal-icon>images/BECollision.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+          <property id="ParticipantObject"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)"#
+##stereotype text="BECollision" HorizontalAlignment="CENTER"/#
+##/panel#
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)"#
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##/vbox#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+  </object>
   <object id="Appliance" inherits="EFixedDevice" instanciable="yes"
     keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
     <description/>
@@ -15475,53 +15741,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
 ##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)"#
 ##stereotype text="Appliance" HorizontalAlignment="CENTER"/#
-##/panel#
-##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)"#
-##label id="Id"/#
-##/panel#
-##linepanel Background="white"/#
-##/vbox#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-  </object>
-  <object id="BECollision" inherits="TouchEvent" instanciable="yes"
-    keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
-    <description/>
-    <recommendation/>
-    <properties>
-      <property id="Description"
-        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
-        <defaultvalues/>
-        <label lang="en">Description</label>
-      </property>
-      <property id="ParticipantObject" iscollection="yes"
-        ismetaclassinstance="yes"
-        preferredwidget="ingenias.editor.widget.CustomJComboBox" type="EPhysicalEntity">
-        <label lang="en">Description</label>
-      </property>
-      <preferredorder>
-        <order>id</order>
-        <order>Description</order>
-        <order>ParticipantObject</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mBECollision.png</small-icon>
-      <normal-icon>images/BECollision.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-          <property id="ParticipantObject"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)"#
-##stereotype text="BECollision" HorizontalAlignment="CENTER"/#
 ##/panel#
 ##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)"#
 ##label id="Id"/#

@@ -14,7 +14,7 @@
    id="svg3041"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="base.svg">
+   sodipodi:docname="CEvent.svg">
   <defs
      id="defs3043">
     <inkscape:perspective
@@ -32,10 +32,10 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.152006"
-     inkscape:cx="9.1591122"
-     inkscape:cy="15.571009"
-     inkscape:current-layer="g3051"
+     inkscape:zoom="28.421292"
+     inkscape:cx="-0.78514441"
+     inkscape:cy="23.276052"
+     inkscape:current-layer="layer2"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -62,7 +62,7 @@
      inkscape:label="background">
     <path
        sodipodi:type="star"
-       style="fill:#8dd35f;fill-opacity:1;stroke:#8dd35f;stroke-width:0.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#d4aa00;fill-opacity:1;stroke:#d4aa00;stroke-width:0.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path3009"
        sodipodi:sides="5"
        sodipodi:cx="2.2525032"
