@@ -8495,8 +8495,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="PartOfBody"/>
       <object id="WorldInitialization"/>
       <object id="SBedroom"/>
-      <object id="SCorridor"/>
       <object id="InitialPreDefPos"/>
+      <object id="SCorridor"/>
       <object id="SArea"/>
       <object id="ESmartPhone"/>
       <object id="HumanInitialization"/>
