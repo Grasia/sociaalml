@@ -3,9 +3,9 @@
 	<parent>
 		<groupId>net.sf.sociaal</groupId>
 		<artifactId>sociaalml</artifactId>
-		<version>1.0.7</version>
+		<version>1.0.8-SNAPSHOT</version>
 	</parent>
-	<version>1.0.7</version>
+	<version>1.0.8-SNAPSHOT</version>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.sf.sociaal</groupId>
 	<artifactId>sociaalmled</artifactId>
