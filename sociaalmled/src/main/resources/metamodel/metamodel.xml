@@ -9786,7 +9786,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##label Text=" = "/#
 ##/panel#
 ##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
-##label id="WearableField"/#
+##label id="WearableObjField"/#
 ##/panel#
 ##/panel#
 
@@ -15160,8 +15160,8 @@ this.getModel().addGraphModelListener(new ChangeNARYEdgeLocation(this));
 this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ]]></code>
     <objects>
-      <object id="ESmartPhone"/>
       <object id="Doorbell"/>
+      <object id="ESmartPhone"/>
       <object id="ERemoteControl"/>
       <object id="Dishwasher"/>
       <object id="WashMachine"/>

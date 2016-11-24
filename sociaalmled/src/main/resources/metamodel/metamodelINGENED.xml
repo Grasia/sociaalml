@@ -22655,7 +22655,7 @@
 &lt;label Text=&quot; = &quot;/&gt;
 &lt;/panel&gt;
 &lt;panel Background=&quot;white&quot; HorizontalAlignment=&quot;CENTER&quot; layout=&quot;FlowLayout(FlowLayout.CENTER,0,0)&quot; &gt;
-&lt;label id=&quot;WearableField&quot;/&gt;
+&lt;label id=&quot;WearableObjField&quot;/&gt;
 &lt;/panel&gt;
 &lt;/panel&gt;
 
