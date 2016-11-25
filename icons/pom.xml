@@ -1,0 +1,76 @@
+	<?xml version="1.0" encoding="UTF-8"?>
+	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+		<parent>
+			<groupId>net.sf.sociaal</groupId>
+			<artifactId>sociaalml</artifactId>
+			<version>1.0.8-SNAPSHOT</version>
+		</parent>
+		<version>1.0.8-SNAPSHOT</version>
+		<modelVersion>4.0.0</modelVersion>
+		<groupId>net.sf.sociaal</groupId>
+		<artifactId>icons</artifactId>
+		<packaging>jar</packaging>
+		<name>SociaalML Icons</name>
+		<description>Set of images to represent SociAALML entities</description>
+		<url>http://grasia.fdi.ucm.es/sociaal</url>
+		<licenses>
+			<license>
+				<name>The GPL V3</name>
+				<url>http://www.gnu.org/copyleft/gpl.html</url>
+				<distribution />
+			</license>
+		</licenses>
+		<developers>
+			<developer>
+				<id>pcampillo</id>
+				<name>Pablo Campillo-Sanchez</name>
+				<email>pabcampi@ucm.es</email>
+			</developer>
+			<developer>
+				<id>escalope</id>
+				<name>Jorge Gomez-Sanz</name>
+				<email>jjgomez@fdi.ucm.es</email>
+			</developer>
+		</developers>
+
+		<build>
+			<plugins>
+
+
+	  <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-site-plugin</artifactId>
+	        <version>3.3</version>
+	        <configuration>
+	          <siteDirectory>${project.basedir}/target/dochtml</siteDirectory>
+	        </configuration>
+	      </plugin>
+
+				<plugin>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>2.4.1</version>
+					<executions>
+						<execution>
+							<id>auto-clean</id>
+							<phase>initialize</phase>
+							<goals>
+								<goal>clean</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+						<optimize>true</optimize>
+						<showDeprecations>true</showDeprecations>
+						<encoding>ISO-8859-1</encoding>
+					</configuration>
+				</plugin>
+			</plugins>
+			
+		</build>
+	</project>

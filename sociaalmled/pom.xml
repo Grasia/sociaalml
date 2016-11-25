@@ -34,6 +34,11 @@
 	</developers>
 	<dependencies>
 		<dependency>
+			<groupId>net.sf.sociaal</groupId>
+			<artifactId>icons</artifactId>
+			<version>1.0.8-SNAPSHOT</version>
+		</dependency>
+		<dependency>
                   <groupId>org.apache.maven.doxia</groupId>
                   <artifactId>doxia-module-markdown</artifactId>
                   <version>1.5</version>
