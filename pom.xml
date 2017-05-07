@@ -9,7 +9,7 @@
   <groupId>net.sf.sociaal</groupId>
   <artifactId>sociaalml</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.9-SNAPSHOT</version>
+  <version>1.0.8-SNAPSHOT</version>
   <name>SociAALML</name>
   <description>Model Driven Development of Software with social requirements</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
@@ -52,10 +52,10 @@
 
   <modules>
     <module>icons</module>
-    <!--module>sociaalmled</module>
+    <module>sociaalmled</module>
     <module>basicscenario</module>
     <module>e3patient</module>
-  <module>e9patient</module-->
+  <module>e9patient</module>
   </modules>
   <profiles>
     <profile>
