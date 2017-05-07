@@ -123,17 +123,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-					<optimize>true</optimize>
-					<showDeprecations>true</showDeprecations>
-					<encoding>ISO-8859-1</encoding>
-				</configuration>
-			</plugin>
 
 
 			<!-- ********************************** -->
@@ -248,7 +237,7 @@
 							<outputDirectory>${project.basedir}/target/generated/src/main/resources/images</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${project.basedir}/src/main/resources/images</directory>
+									<directory>${project.basedir}/../icons/src/main/resources/images</directory>
 									<filtering>false</filtering>
 								</resource>
 							</resources>
@@ -566,7 +555,7 @@
 									<outputDirectory>target/generated/src/main/resources</outputDirectory>
 								</artifactItem>
 
-<artifactItem>
+                                <artifactItem>
 									<groupId>net.sf.ingenme</groupId>
 									<artifactId>ingened</artifactId>
 									<version>${ingenme.version}</version>

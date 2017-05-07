@@ -290,6 +290,64 @@
       <player id="Medication"/>
     </validplayers>
   </role>
+  <relationship id="socialRelations">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/msocialRelations.png</small-icon>
+      <normal-icon>images/socialRelations.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="socialRelations" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="socialRelationssource" maxcard="1" mincard="1" type="source"/>
+      <role id="socialRelationstarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="socialRelationssource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="PersonalInfo"/>
+    </validplayers>
+  </role>
+  <role id="socialRelationstarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="SocialNetwork"/>
+    </validplayers>
+  </role>
   <relationship id="WorkAs">
     <properties>
       <preferredorder>
@@ -404,122 +462,6 @@
     </graphics>
     <validplayers>
       <player id="SBuilding"/>
-    </validplayers>
-  </role>
-  <relationship id="socialRelations">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/msocialRelations.png</small-icon>
-      <normal-icon>images/socialRelations.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="socialRelations" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="socialRelationssource" maxcard="1" mincard="1" type="source"/>
-      <role id="socialRelationstarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="socialRelationssource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="PersonalInfo"/>
-    </validplayers>
-  </role>
-  <role id="socialRelationstarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="SocialNetwork"/>
-    </validplayers>
-  </role>
-  <relationship id="ConditionNeeded">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mConditionNeeded.png</small-icon>
-      <normal-icon>images/ConditionNeeded.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="ConditionNeeded" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="ConditionNeededsource" maxcard="1" mincard="1" type="source"/>
-      <role id="ConditionNeededtarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="ConditionNeededsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="EventProcessor"/>
-    </validplayers>
-  </role>
-  <role id="ConditionNeededtarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="Condition"/>
     </validplayers>
   </role>
   <relationship id="RelatedEvent">
@@ -638,6 +580,64 @@
       <player id="BActivity"/>
     </validplayers>
   </role>
+  <relationship id="ConditionNeeded">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mConditionNeeded.png</small-icon>
+      <normal-icon>images/ConditionNeeded.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="ConditionNeeded" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="ConditionNeededsource" maxcard="1" mincard="1" type="source"/>
+      <role id="ConditionNeededtarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="ConditionNeededsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="EventProcessor"/>
+    </validplayers>
+  </role>
+  <role id="ConditionNeededtarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="Condition"/>
+    </validplayers>
+  </role>
   <relationship id="Connects">
     <properties>
       <preferredorder>
@@ -752,6 +752,64 @@
     </graphics>
     <validplayers>
       <player id="SFloor"/>
+    </validplayers>
+  </role>
+  <relationship id="tool">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mtool.png</small-icon>
+      <normal-icon>images/tool.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="tool" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="toolsource" maxcard="1" mincard="1" type="source"/>
+      <role id="tooltarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="toolsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="FChangeToolFilter"/>
+    </validplayers>
+  </role>
+  <role id="tooltarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="ETool"/>
     </validplayers>
   </role>
   <relationship id="FPrecondition">
@@ -870,64 +928,6 @@
       <player id="BTask"/>
     </validplayers>
   </role>
-  <relationship id="tool">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mtool.png</small-icon>
-      <normal-icon>images/tool.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="tool" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="toolsource" maxcard="1" mincard="1" type="source"/>
-      <role id="tooltarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="toolsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="FChangeToolFilter"/>
-    </validplayers>
-  </role>
-  <role id="tooltarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="ETool"/>
-    </validplayers>
-  </role>
   <relationship id="relatedCondition">
     <properties>
       <preferredorder>
@@ -984,180 +984,6 @@
     </graphics>
     <validplayers>
       <player id="Condition"/>
-    </validplayers>
-  </role>
-  <relationship id="aeas_op1">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/maeas_op1.png</small-icon>
-      <normal-icon>images/aeas_op1.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="aeas_op1" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="aeas_op1source" maxcard="1" mincard="1" type="source"/>
-      <role id="aeas_op1target" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="aeas_op1source">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="AEAddSub"/>
-    </validplayers>
-  </role>
-  <role id="aeas_op1target">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="ArithmeticExpression"/>
-    </validplayers>
-  </role>
-  <relationship id="aemd_op2">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/maemd_op2.png</small-icon>
-      <normal-icon>images/aemd_op2.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="aemd_op2" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="aemd_op2source" maxcard="1" mincard="1" type="source"/>
-      <role id="aemd_op2target" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="aemd_op2source">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="AEMulDiv"/>
-    </validplayers>
-  </role>
-  <role id="aemd_op2target">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="AESubSub"/>
-    </validplayers>
-  </role>
-  <relationship id="aemd_op1">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/maemd_op1.png</small-icon>
-      <normal-icon>images/aemd_op1.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="aemd_op1" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="aemd_op1source" maxcard="1" mincard="1" type="source"/>
-      <role id="aemd_op1target" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="aemd_op1source">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="AEMulDiv"/>
-    </validplayers>
-  </role>
-  <role id="aemd_op1target">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="AESub"/>
     </validplayers>
   </role>
   <relationship id="aeinv_op">
@@ -1218,6 +1044,64 @@
       <player id="EASubSubSub"/>
     </validplayers>
   </role>
+  <relationship id="aemd_op2">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/maemd_op2.png</small-icon>
+      <normal-icon>images/aemd_op2.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="aemd_op2" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="aemd_op2source" maxcard="1" mincard="1" type="source"/>
+      <role id="aemd_op2target" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="aemd_op2source">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="AEMulDiv"/>
+    </validplayers>
+  </role>
+  <role id="aemd_op2target">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="AESubSub"/>
+    </validplayers>
+  </role>
   <relationship id="aeas_op2">
     <properties>
       <preferredorder>
@@ -1274,6 +1158,296 @@
     </graphics>
     <validplayers>
       <player id="AESub"/>
+    </validplayers>
+  </role>
+  <relationship id="aeas_op1">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/maeas_op1.png</small-icon>
+      <normal-icon>images/aeas_op1.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="aeas_op1" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="aeas_op1source" maxcard="1" mincard="1" type="source"/>
+      <role id="aeas_op1target" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="aeas_op1source">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="AEAddSub"/>
+    </validplayers>
+  </role>
+  <role id="aeas_op1target">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="ArithmeticExpression"/>
+    </validplayers>
+  </role>
+  <relationship id="aemd_op1">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/maemd_op1.png</small-icon>
+      <normal-icon>images/aemd_op1.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="aemd_op1" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="aemd_op1source" maxcard="1" mincard="1" type="source"/>
+      <role id="aemd_op1target" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="aemd_op1source">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="AEMulDiv"/>
+    </validplayers>
+  </role>
+  <role id="aemd_op1target">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="AESub"/>
+    </validplayers>
+  </role>
+  <relationship id="RelatedHuman">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mRelatedHuman.png</small-icon>
+      <normal-icon>images/RelatedHuman.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="RelatedHuman" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="RelatedHumansource" maxcard="1" mincard="1" type="source"/>
+      <role id="RelatedHumantarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="RelatedHumansource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="HumanInitialization"/>
+    </validplayers>
+  </role>
+  <role id="RelatedHumantarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="Human"/>
+    </validplayers>
+  </role>
+  <relationship id="InitialLocation">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mInitialLocation.png</small-icon>
+      <normal-icon>images/InitialLocation.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="InitialLocation" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="InitialLocationsource" maxcard="1" mincard="1" type="source"/>
+      <role id="InitialLocationtarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="InitialLocationsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="HumanInitialization"/>
+    </validplayers>
+  </role>
+  <role id="InitialLocationtarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="SSpatial"/>
+    </validplayers>
+  </role>
+  <relationship id="InitialActivity">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mInitialActivity.png</small-icon>
+      <normal-icon>images/InitialActivity.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="InitialActivity" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="InitialActivitysource" maxcard="1" mincard="1" type="source"/>
+      <role id="InitialActivitytarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="InitialActivitysource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="HumanInitialization"/>
+    </validplayers>
+  </role>
+  <role id="InitialActivitytarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BActivity"/>
     </validplayers>
   </role>
   <relationship id="InitialDate">
@@ -1392,180 +1566,6 @@
       <player id="ESmartPhone"/>
     </validplayers>
   </role>
-  <relationship id="RelatedHuman">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mRelatedHuman.png</small-icon>
-      <normal-icon>images/RelatedHuman.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="RelatedHuman" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="RelatedHumansource" maxcard="1" mincard="1" type="source"/>
-      <role id="RelatedHumantarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="RelatedHumansource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="HumanInitialization"/>
-    </validplayers>
-  </role>
-  <role id="RelatedHumantarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="Human"/>
-    </validplayers>
-  </role>
-  <relationship id="InitialActivity">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mInitialActivity.png</small-icon>
-      <normal-icon>images/InitialActivity.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="InitialActivity" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="InitialActivitysource" maxcard="1" mincard="1" type="source"/>
-      <role id="InitialActivitytarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="InitialActivitysource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="HumanInitialization"/>
-    </validplayers>
-  </role>
-  <role id="InitialActivitytarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="BActivity"/>
-    </validplayers>
-  </role>
-  <relationship id="InitialLocation">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mInitialLocation.png</small-icon>
-      <normal-icon>images/InitialLocation.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="InitialLocation" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="InitialLocationsource" maxcard="1" mincard="1" type="source"/>
-      <role id="InitialLocationtarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="InitialLocationsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="HumanInitialization"/>
-    </validplayers>
-  </role>
-  <role id="InitialLocationtarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="SSpatial"/>
-    </validplayers>
-  </role>
   <relationship id="CameraFaceToHuman">
     <properties>
       <preferredorder>
@@ -1622,64 +1622,6 @@
     </graphics>
     <validplayers>
       <player id="Human"/>
-    </validplayers>
-  </role>
-  <relationship id="InitializesSymptom">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mInitializesSymptom.png</small-icon>
-      <normal-icon>images/InitializesSymptom.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="InitializesSymptom" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="InitializesSymptomsource" maxcard="1" mincard="1" type="source"/>
-      <role id="InitializesSymptomtarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="InitializesSymptomsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="HumanInitialization"/>
-    </validplayers>
-  </role>
-  <role id="InitializesSymptomtarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="SymptomInitialization"/>
     </validplayers>
   </role>
   <relationship id="InitializedSymptom">
@@ -1740,15 +1682,15 @@
       <player id="PDSymtom"/>
     </validplayers>
   </role>
-  <relationship id="DeonticAssignement">
+  <relationship id="InitializesSymptom">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mDeonticAssignement.png</small-icon>
-      <normal-icon>images/DeonticAssignement.png</normal-icon>
+      <small-icon>images/mInitializesSymptom.png</small-icon>
+      <normal-icon>images/InitializesSymptom.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -1757,7 +1699,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="DeonticAssignement" HorizontalAlignment="CENTER"/#
+##stereotype text="InitializesSymptom" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -1774,28 +1716,28 @@
       </layout>
     </graphics>
     <roles>
-      <role id="DeonticAssignementsource" maxcard="1" mincard="1" type="source"/>
-      <role id="DeonticAssignementtarget" maxcard="1" mincard="1" type="target"/>
+      <role id="InitializesSymptomsource" maxcard="1" mincard="1" type="source"/>
+      <role id="InitializesSymptomtarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="DeonticAssignementsource">
+  <role id="InitializesSymptomsource">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="HumanNorm"/>
+      <player id="HumanInitialization"/>
     </validplayers>
   </role>
-  <role id="DeonticAssignementtarget">
+  <role id="InitializesSymptomtarget">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="BTask"/>
+      <player id="SymptomInitialization"/>
     </validplayers>
   </role>
   <relationship id="Role">
@@ -1856,15 +1798,15 @@
       <player id="Human"/>
     </validplayers>
   </role>
-  <relationship id="AffectedAction">
+  <relationship id="DeonticAssignement">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mAffectedAction.png</small-icon>
-      <normal-icon>images/AffectedAction.png</normal-icon>
+      <small-icon>images/mDeonticAssignement.png</small-icon>
+      <normal-icon>images/DeonticAssignement.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -1873,7 +1815,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="AffectedAction" HorizontalAlignment="CENTER"/#
+##stereotype text="DeonticAssignement" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -1890,11 +1832,69 @@
       </layout>
     </graphics>
     <roles>
-      <role id="AffectedActionsource" maxcard="1" mincard="1" type="source"/>
-      <role id="AffectedActiontarget" maxcard="1" mincard="1" type="target"/>
+      <role id="DeonticAssignementsource" maxcard="1" mincard="1" type="source"/>
+      <role id="DeonticAssignementtarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="AffectedActionsource">
+  <role id="DeonticAssignementsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="HumanNorm"/>
+    </validplayers>
+  </role>
+  <role id="DeonticAssignementtarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BTask"/>
+    </validplayers>
+  </role>
+  <relationship id="ActionResponsible">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mActionResponsible.png</small-icon>
+      <normal-icon>images/ActionResponsible.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="ActionResponsible" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="ActionResponsiblesource" maxcard="1" mincard="1" type="source"/>
+      <role id="ActionResponsibletarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="ActionResponsiblesource">
     <properties/>
     <graphics>
       <small-icon/>
@@ -1904,14 +1904,14 @@
       <player id="AnotherActionHappens"/>
     </validplayers>
   </role>
-  <role id="AffectedActiontarget">
+  <role id="ActionResponsibletarget">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="BTask"/>
+      <player id="Human"/>
     </validplayers>
   </role>
   <relationship id="ActionHappeningAfterwards">
@@ -1972,15 +1972,15 @@
       <player id="AnotherActionHappens"/>
     </validplayers>
   </role>
-  <relationship id="ActionResponsible">
+  <relationship id="AffectedAction">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mActionResponsible.png</small-icon>
-      <normal-icon>images/ActionResponsible.png</normal-icon>
+      <small-icon>images/mAffectedAction.png</small-icon>
+      <normal-icon>images/AffectedAction.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -1989,7 +1989,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="ActionResponsible" HorizontalAlignment="CENTER"/#
+##stereotype text="AffectedAction" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -2006,11 +2006,11 @@
       </layout>
     </graphics>
     <roles>
-      <role id="ActionResponsiblesource" maxcard="1" mincard="1" type="source"/>
-      <role id="ActionResponsibletarget" maxcard="1" mincard="1" type="target"/>
+      <role id="AffectedActionsource" maxcard="1" mincard="1" type="source"/>
+      <role id="AffectedActiontarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="ActionResponsiblesource">
+  <role id="AffectedActionsource">
     <properties/>
     <graphics>
       <small-icon/>
@@ -2020,14 +2020,420 @@
       <player id="AnotherActionHappens"/>
     </validplayers>
   </role>
-  <role id="ActionResponsibletarget">
+  <role id="AffectedActiontarget">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="Human"/>
+      <player id="BTask"/>
+    </validplayers>
+  </role>
+  <relationship id="goToBodySpeedVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mgoToBodySpeedVar.png</small-icon>
+      <normal-icon>images/goToBodySpeedVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="goToBodySpeedVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="goToBodySpeedVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="goToBodySpeedVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="goToBodySpeedVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="GoToBodyLoc"/>
+    </validplayers>
+  </role>
+  <role id="goToBodySpeedVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="PrimitiveVar"/>
+    </validplayers>
+  </role>
+  <relationship id="leaveObjVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mleaveObjVar.png</small-icon>
+      <normal-icon>images/leaveObjVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="leaveObjVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="leaveObjVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="leaveObjVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="leaveObjVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BLeaveTask"/>
+    </validplayers>
+  </role>
+  <role id="leaveObjVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="ObjectVar"/>
+    </validplayers>
+  </role>
+  <relationship id="closeObjVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mcloseObjVar.png</small-icon>
+      <normal-icon>images/closeObjVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="closeObjVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="closeObjVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="closeObjVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="closeObjVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="CloseTask"/>
+    </validplayers>
+  </role>
+  <role id="closeObjVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="ObjectVar"/>
+    </validplayers>
+  </role>
+  <relationship id="pickUpObjVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mpickUpObjVar.png</small-icon>
+      <normal-icon>images/pickUpObjVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="pickUpObjVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="pickUpObjVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="pickUpObjVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="pickUpObjVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BPickUpTask"/>
+    </validplayers>
+  </role>
+  <role id="pickUpObjVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="ObjectVar"/>
+    </validplayers>
+  </role>
+  <relationship id="waitForHumanVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mwaitForHumanVar.png</small-icon>
+      <normal-icon>images/waitForHumanVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="waitForHumanVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="waitForHumanVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="waitForHumanVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="waitForHumanVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="WaitForBodyClose"/>
+    </validplayers>
+  </role>
+  <role id="waitForHumanVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="HumanVar"/>
+    </validplayers>
+  </role>
+  <relationship id="durationVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mdurationVar.png</small-icon>
+      <normal-icon>images/durationVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="durationVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="durationVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="durationVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="durationVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BSimpleDurationTask"/>
+    </validplayers>
+  </role>
+  <role id="durationVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="PrimitiveVar"/>
+    </validplayers>
+  </role>
+  <relationship id="goToSpeedVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mgoToSpeedVar.png</small-icon>
+      <normal-icon>images/goToSpeedVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="goToSpeedVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="goToSpeedVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="goToSpeedVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="goToSpeedVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BGoToTask"/>
+    </validplayers>
+  </role>
+  <role id="goToSpeedVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="PrimitiveVar"/>
     </validplayers>
   </role>
   <relationship id="messageVar">
@@ -2204,6 +2610,122 @@
       <player id="SeatVar"/>
     </validplayers>
   </role>
+  <relationship id="putOnWearableVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mputOnWearableVar.png</small-icon>
+      <normal-icon>images/putOnWearableVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="putOnWearableVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="putOnWearableVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="putOnWearableVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="putOnWearableVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="PutOnTask"/>
+    </validplayers>
+  </role>
+  <role id="putOnWearableVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="WearableVar"/>
+    </validplayers>
+  </role>
+  <relationship id="goToPlaceVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/mgoToPlaceVar.png</small-icon>
+      <normal-icon>images/goToPlaceVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="goToPlaceVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="goToPlaceVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="goToPlaceVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="goToPlaceVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BGoToTask"/>
+    </validplayers>
+  </role>
+  <role id="goToPlaceVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="SpatialVar"/>
+    </validplayers>
+  </role>
   <relationship id="tapDeviceVar">
     <properties>
       <preferredorder>
@@ -2260,238 +2782,6 @@
     </graphics>
     <validplayers>
       <player id="DeviceVar"/>
-    </validplayers>
-  </role>
-  <relationship id="animVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/manimVar.png</small-icon>
-      <normal-icon>images/animVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="animVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="animVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="animVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="animVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="PlayAnimationTask"/>
-    </validplayers>
-  </role>
-  <role id="animVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="PrimitiveVar"/>
-    </validplayers>
-  </role>
-  <relationship id="pickUpObjVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mpickUpObjVar.png</small-icon>
-      <normal-icon>images/pickUpObjVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="pickUpObjVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="pickUpObjVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="pickUpObjVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="pickUpObjVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="BPickUpTask"/>
-    </validplayers>
-  </role>
-  <role id="pickUpObjVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="ObjectVar"/>
-    </validplayers>
-  </role>
-  <relationship id="durationVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mdurationVar.png</small-icon>
-      <normal-icon>images/durationVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="durationVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="durationVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="durationVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="durationVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="BSimpleDurationTask"/>
-    </validplayers>
-  </role>
-  <role id="durationVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="PrimitiveVar"/>
-    </validplayers>
-  </role>
-  <relationship id="waitForHumanVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mwaitForHumanVar.png</small-icon>
-      <normal-icon>images/waitForHumanVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="waitForHumanVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="waitForHumanVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="waitForHumanVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="waitForHumanVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="WaitForBodyClose"/>
-    </validplayers>
-  </role>
-  <role id="waitForHumanVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="HumanVar"/>
     </validplayers>
   </role>
   <relationship id="openObjVar">
@@ -2552,15 +2842,15 @@
       <player id="ObjectVar"/>
     </validplayers>
   </role>
-  <relationship id="putOnWearableVar">
+  <relationship id="animVar">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mputOnWearableVar.png</small-icon>
-      <normal-icon>images/putOnWearableVar.png</normal-icon>
+      <small-icon>images/manimVar.png</small-icon>
+      <normal-icon>images/animVar.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -2569,7 +2859,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="putOnWearableVar" HorizontalAlignment="CENTER"/#
+##stereotype text="animVar" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -2586,28 +2876,86 @@
       </layout>
     </graphics>
     <roles>
-      <role id="putOnWearableVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="putOnWearableVartarget" maxcard="1" mincard="1" type="target"/>
+      <role id="animVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="animVartarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="putOnWearableVarsource">
+  <role id="animVarsource">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="PutOnTask"/>
+      <player id="PlayAnimationTask"/>
     </validplayers>
   </role>
-  <role id="putOnWearableVartarget">
+  <role id="animVartarget">
     <properties/>
     <graphics>
       <small-icon/>
       <normal-icon/>
     </graphics>
     <validplayers>
-      <player id="WearableVar"/>
+      <player id="PrimitiveVar"/>
+    </validplayers>
+  </role>
+  <relationship id="useObjVar">
+    <properties>
+      <preferredorder>
+        <order>id</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/museObjVar.png</small-icon>
+      <normal-icon>images/useObjVar.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##stereotype text="useObjVar" HorizontalAlignment="CENTER"/#
+##/vbox#
+##/panel#
+</content>
+          <content id="LABEL">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##htmllabel id="Id"/#
+##/panel#
+</content>
+          <content id="NOICON">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+    <roles>
+      <role id="useObjVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="useObjVartarget" maxcard="1" mincard="1" type="target"/>
+    </roles>
+  </relationship>
+  <role id="useObjVarsource">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="BUseTask"/>
+    </validplayers>
+  </role>
+  <role id="useObjVartarget">
+    <properties/>
+    <graphics>
+      <small-icon/>
+      <normal-icon/>
+    </graphics>
+    <validplayers>
+      <player id="ObjectVar"/>
     </validplayers>
   </role>
   <relationship id="goToBodyVar">
@@ -2668,15 +3016,15 @@
       <player id="HumanVar"/>
     </validplayers>
   </role>
-  <relationship id="leaveObjVar">
+  <relationship id="leaveObjDestinyVar">
     <properties>
       <preferredorder>
         <order>id</order>
       </preferredorder>
     </properties>
     <graphics>
-      <small-icon>images/mleaveObjVar.png</small-icon>
-      <normal-icon>images/leaveObjVar.png</normal-icon>
+      <small-icon>images/mleaveObjDestinyVar.png</small-icon>
+      <normal-icon>images/leaveObjDestinyVar.png</normal-icon>
       <layout>
         <properties>
           <property id="id"/>
@@ -2685,7 +3033,7 @@
           <content id="INGENIAS">
 ##panel layout="BorderLayout(0,0)"  Background="white"#
 ##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="leaveObjVar" HorizontalAlignment="CENTER"/#
+##stereotype text="leaveObjDestinyVar" HorizontalAlignment="CENTER"/#
 ##/vbox#
 ##/panel#
 </content>
@@ -2702,11 +3050,11 @@
       </layout>
     </graphics>
     <roles>
-      <role id="leaveObjVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="leaveObjVartarget" maxcard="1" mincard="1" type="target"/>
+      <role id="leaveObjDestinyVarsource" maxcard="1" mincard="1" type="source"/>
+      <role id="leaveObjDestinyVartarget" maxcard="1" mincard="1" type="target"/>
     </roles>
   </relationship>
-  <role id="leaveObjVarsource">
+  <role id="leaveObjDestinyVarsource">
     <properties/>
     <graphics>
       <small-icon/>
@@ -2716,181 +3064,7 @@
       <player id="BLeaveTask"/>
     </validplayers>
   </role>
-  <role id="leaveObjVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="ObjectVar"/>
-    </validplayers>
-  </role>
-  <relationship id="goToSpeedVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mgoToSpeedVar.png</small-icon>
-      <normal-icon>images/goToSpeedVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="goToSpeedVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="goToSpeedVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="goToSpeedVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="goToSpeedVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="BGoToTask"/>
-    </validplayers>
-  </role>
-  <role id="goToSpeedVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="PrimitiveVar"/>
-    </validplayers>
-  </role>
-  <relationship id="goToBodySpeedVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mgoToBodySpeedVar.png</small-icon>
-      <normal-icon>images/goToBodySpeedVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="goToBodySpeedVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="goToBodySpeedVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="goToBodySpeedVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="goToBodySpeedVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="GoToBodyLoc"/>
-    </validplayers>
-  </role>
-  <role id="goToBodySpeedVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="PrimitiveVar"/>
-    </validplayers>
-  </role>
-  <relationship id="closeObjVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mcloseObjVar.png</small-icon>
-      <normal-icon>images/closeObjVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="closeObjVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="closeObjVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="closeObjVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="closeObjVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="CloseTask"/>
-    </validplayers>
-  </role>
-  <role id="closeObjVartarget">
+  <role id="leaveObjDestinyVartarget">
     <properties/>
     <graphics>
       <small-icon/>
@@ -3016,64 +3190,6 @@
       <player id="SpatialVar"/>
     </validplayers>
   </role>
-  <relationship id="leaveObjDestinyVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mleaveObjDestinyVar.png</small-icon>
-      <normal-icon>images/leaveObjDestinyVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="leaveObjDestinyVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="leaveObjDestinyVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="leaveObjDestinyVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="leaveObjDestinyVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="BLeaveTask"/>
-    </validplayers>
-  </role>
-  <role id="leaveObjDestinyVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="ObjectVar"/>
-    </validplayers>
-  </role>
   <relationship id="putOffWearableVar">
     <properties>
       <preferredorder>
@@ -3190,122 +3306,6 @@
       <player id="ObjectVar"/>
     </validplayers>
   </role>
-  <relationship id="goToPlaceVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/mgoToPlaceVar.png</small-icon>
-      <normal-icon>images/goToPlaceVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="goToPlaceVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="goToPlaceVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="goToPlaceVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="goToPlaceVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="BGoToTask"/>
-    </validplayers>
-  </role>
-  <role id="goToPlaceVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="SpatialVar"/>
-    </validplayers>
-  </role>
-  <relationship id="useObjVar">
-    <properties>
-      <preferredorder>
-        <order>id</order>
-      </preferredorder>
-    </properties>
-    <graphics>
-      <small-icon>images/museObjVar.png</small-icon>
-      <normal-icon>images/useObjVar.png</normal-icon>
-      <layout>
-        <properties>
-          <property id="id"/>
-        </properties>
-        <views>
-          <content id="INGENIAS">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##vbox Background="white" constraints="BorderLayout.CENTER"#
-##stereotype text="useObjVar" HorizontalAlignment="CENTER"/#
-##/vbox#
-##/panel#
-</content>
-          <content id="LABEL">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##htmllabel id="Id"/#
-##/panel#
-</content>
-          <content id="NOICON">
-##panel layout="BorderLayout(0,0)"  Background="white"#
-##/panel#
-</content>
-        </views>
-      </layout>
-    </graphics>
-    <roles>
-      <role id="useObjVarsource" maxcard="1" mincard="1" type="source"/>
-      <role id="useObjVartarget" maxcard="1" mincard="1" type="target"/>
-    </roles>
-  </relationship>
-  <role id="useObjVarsource">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="BUseTask"/>
-    </validplayers>
-  </role>
-  <role id="useObjVartarget">
-    <properties/>
-    <graphics>
-      <small-icon/>
-      <normal-icon/>
-    </graphics>
-    <validplayers>
-      <player id="ObjectVar"/>
-    </validplayers>
-  </role>
   <role id="TFiltertarget">
     <graphics>
       <small-icon/>
@@ -3382,58 +3382,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="DeviceVar" inherits="Var" instanciable="yes" keyfield="id"
@@ -3505,58 +3505,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <metamodel icon="images/mActivityDiagram.png" id="ActivityDiagram" name="">
@@ -3576,8 +3576,9 @@ this.getModel().addGraphModelListener(new ChangeNARYEdgeLocation(this));
 this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ]]></code>
     <objects>
-      <object id="CReceiveHelp"/>
       <object id="IsThingInRoomCondition"/>
+      <object id="CReceiveHelp"/>
+      <object id="NotCondition"/>
       <object id="CAlways"/>
       <object id="CSymptom"/>
       <object id="CTimer"/>
@@ -3588,8 +3589,9 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="CEvent"/>
       <object id="DoorStateCondition"/>
       <object id="PresenceSensorStateCondition"/>
-      <object id="CObjWeight"/>
+      <object id="CSay"/>
       <object id="COutside"/>
+      <object id="CObjWeight"/>
       <object id="LightStateCondition"/>
       <object id="CDayOfTheWeek"/>
       <object id="NotCondition"/>
@@ -3613,58 +3615,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="EatableItem" inherits="EMobileObject" instanciable="yes"
@@ -3779,58 +3781,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="PDSymtom" instanciable="yes" keyfield="id" package="">
@@ -4488,58 +4490,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="ELivingBeing" inherits="EMobilePhysicalEntity"
@@ -5191,58 +5193,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="HumanNorm" instanciable="no" keyfield="id" package="">
@@ -5255,11 +5257,13 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <label lang="en">Description</label>
       </property>
       <property id="HoldingCondition" iscollection=""
-        ismetaclassinstance="yes" preferredwidget="" type="NormHoldingCondition">
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="NormHoldingCondition">
         <label lang="en">Description</label>
       </property>
       <property id="DeonticAssignement" iscollection=""
-        ismetaclassinstance="yes" preferredwidget="" type="BTask">
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="BTask">
         <label lang="en">Description</label>
       </property>
       <property id="Deontic"
@@ -5736,7 +5740,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <label lang="en">Description</label>
       </property>
       <property id="ActionHappeningAfterwards" iscollection=""
-        ismetaclassinstance="yes" preferredwidget="" type="AnotherActionHappens">
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="AnotherActionHappens">
         <label lang="en">Description</label>
       </property>
       <preferredorder>
@@ -6036,6 +6041,128 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##/htmllabel#
 ##/panel#
 ##label Foreground="blue" icon="images/conditions/LightState.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+  </object>
+  <object id="SwipeTask" inherits="BSimpleTask" instanciable="yes"
+    keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
+    <description/>
+    <recommendation/>
+    <properties>
+      <property id="EndYField"
+        preferredwidget="ingenias.editor.widget.IntegerJTextField" type="java.lang.String">
+        <defaultvalues>
+          <value>LeftWrist</value>
+          <value>RightWrist</value>
+          <value>LeftHand</value>
+          <value>RightHand</value>
+          <value>LeftAnkle</value>
+          <value>RightAnkle</value>
+          <value>Head</value>
+          <value>Chest</value>
+          <value>Back</value>
+          <value>LeftHip</value>
+          <value>RightHip</value>
+        </defaultvalues>
+        <label lang="en">Description</label>
+      </property>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <property id="EndXField"
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="java.lang.String">
+        <defaultvalues>
+          <value>LeftWrist</value>
+          <value>RightWrist</value>
+          <value>LeftHand</value>
+          <value>RightHand</value>
+          <value>LeftAnkle</value>
+          <value>RightAnkle</value>
+          <value>Head</value>
+          <value>Chest</value>
+          <value>Back</value>
+          <value>LeftHip</value>
+          <value>RightHip</value>
+        </defaultvalues>
+        <label lang="en">Description</label>
+      </property>
+      <property id="StartYField"
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="java.lang.String">
+        <defaultvalues>
+          <value>LeftWrist</value>
+          <value>RightWrist</value>
+          <value>LeftHand</value>
+          <value>RightHand</value>
+          <value>LeftAnkle</value>
+          <value>RightAnkle</value>
+          <value>Head</value>
+          <value>Chest</value>
+          <value>Back</value>
+          <value>LeftHip</value>
+          <value>RightHip</value>
+        </defaultvalues>
+        <label lang="en">Description</label>
+      </property>
+      <property id="TargetSmartphone" iscollection="no"
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJComboBox" type="ESmartPhone">
+        <label lang="en">Description</label>
+      </property>
+      <property id="StartXField"
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="java.lang.String">
+        <defaultvalues>
+          <value>LeftWrist</value>
+          <value>RightWrist</value>
+          <value>LeftHand</value>
+          <value>RightHand</value>
+          <value>LeftAnkle</value>
+          <value>RightAnkle</value>
+          <value>Head</value>
+          <value>Chest</value>
+          <value>Back</value>
+          <value>LeftHip</value>
+          <value>RightHip</value>
+        </defaultvalues>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>EndYField</order>
+        <order>Description</order>
+        <order>EndXField</order>
+        <order>StartYField</order>
+        <order>TargetSmartphone</order>
+        <order>StartXField</order>
+        <order>CanBeInterruptedField</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/behaviour/tasks/Swipe16.png</small-icon>
+      <normal-icon>images/behaviour/tasks/Swipe.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+          <property id="EndYField"/>
+          <property id="EndXField"/>
+          <property id="StartYField"/>
+          <property id="TargetSmartphone"/>
+          <property id="StartXField"/>
+          <property id="CanBeInterruptedField"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/behaviour/tasks/Swipe.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
 ##/panel#
 </content>
         </views>
@@ -6382,6 +6509,100 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ##/htmllabel#
 ##/panel#
 ##label Foreground="blue" icon="images/objects/Bath.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+</content>
+        </views>
+      </layout>
+    </graphics>
+  </object>
+  <object id="CSay" inherits="Condition" instanciable="yes"
+    keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
+    <description>
+Checks if someone says a message (MessageField). If an agent is specified with (HumanTarget field), only it will be checked. Other wise, all human agents will be checked. </description>
+    <recommendation/>
+    <properties>
+      <property id="Description"
+        preferredwidget="ingenias.editor.widget.ScrolledTArea" type="java.lang.String">
+        <defaultvalues/>
+        <label lang="en">Description</label>
+      </property>
+      <property id="HumanTarget" iscollection="no"
+        ismetaclassinstance="yes" preferredwidget="" type="Human">
+        <label lang="en">Description</label>
+      </property>
+      <property id="MessageField"
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="java.lang.String">
+        <defaultvalues>
+          <value>LeftWrist</value>
+          <value>RightWrist</value>
+          <value>LeftHand</value>
+          <value>RightHand</value>
+          <value>LeftAnkle</value>
+          <value>RightAnkle</value>
+          <value>Head</value>
+          <value>Chest</value>
+          <value>Back</value>
+          <value>LeftHip</value>
+          <value>RightHip</value>
+        </defaultvalues>
+        <label lang="en">Description</label>
+      </property>
+      <preferredorder>
+        <order>id</order>
+        <order>Description</order>
+        <order>HumanTarget</order>
+        <order>MessageField</order>
+      </preferredorder>
+    </properties>
+    <graphics>
+      <small-icon>images/conditions/CSay16.png</small-icon>
+      <normal-icon>images/conditions/CSay.png</normal-icon>
+      <layout>
+        <properties>
+          <property id="id"/>
+          <property id="HumanTarget"/>
+          <property id="MessageField"/>
+        </properties>
+        <views>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)"  Background="white"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel#
+##/panel#
+##label Foreground="blue" icon="images/conditions/CSay.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+</content>
+          <content id="INGENIAS">
+##panel layout="BorderLayout(0,0)" Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="HumanTarget"/#
+##/panel#
+
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label Text=" says "/#
+##/panel#
+
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="MessageField"/#
+##/panel#
+
+##/panel#
+
+##panel Background="white" HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##iconlabel icon="images/conditions/CSay.png" /#
+##/panel#
+
+##/vbox#
 ##/panel#
 </content>
         </views>
@@ -6974,58 +7195,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="HumanProfile" instanciable="no" keyfield="id" package="">
@@ -8068,58 +8289,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="BEObjOutFielOfVision" inherits="VisionEvent"
@@ -8444,8 +8665,9 @@ this.getModel().addGraphModelListener(new ChangeNARYEdgeLocation(this));
 this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ]]></code>
     <objects>
-      <object id="CReceiveHelp"/>
       <object id="IsThingInRoomCondition"/>
+      <object id="CReceiveHelp"/>
+      <object id="NotCondition"/>
       <object id="CAlways"/>
       <object id="CSymptom"/>
       <object id="CTimer"/>
@@ -8456,8 +8678,9 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="CEvent"/>
       <object id="DoorStateCondition"/>
       <object id="PresenceSensorStateCondition"/>
-      <object id="CObjWeight"/>
+      <object id="CSay"/>
       <object id="COutside"/>
+      <object id="CObjWeight"/>
       <object id="LightStateCondition"/>
       <object id="CDayOfTheWeek"/>
       <object id="NotCondition"/>
@@ -8475,58 +8698,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="MedicationTime" instanciable="yes" keyfield="id" package="">
@@ -10268,58 +10491,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="InitProgramPool" instanciable="yes" keyfield="id" package="">
@@ -13450,8 +13673,9 @@ this.getModel().addGraphModelListener(new ChangeNARYEdgeLocation(this));
 this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ]]></code>
     <objects>
-      <object id="CReceiveHelp"/>
       <object id="IsThingInRoomCondition"/>
+      <object id="CReceiveHelp"/>
+      <object id="NotCondition"/>
       <object id="CAlways"/>
       <object id="CSymptom"/>
       <object id="CTimer"/>
@@ -13462,24 +13686,45 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="CEvent"/>
       <object id="DoorStateCondition"/>
       <object id="PresenceSensorStateCondition"/>
-      <object id="CObjWeight"/>
+      <object id="CSay"/>
       <object id="COutside"/>
+      <object id="CObjWeight"/>
       <object id="LightStateCondition"/>
       <object id="CDayOfTheWeek"/>
       <object id="NotCondition"/>
       <object id="CSymptom"/>
       <object id="GoToBodyLoc"/>
-      <object id="DropObj"/>
+      <object id="TakeOffTask"/>
+      <object id="WaitTask"/>
+      <object id="BPickUpTask"/>
+      <object id="FallSleep"/>
       <object id="OpenTask"/>
+      <object id="Drink"/>
       <object id="BGoToTask"/>
       <object id="SayTask"/>
+      <object id="BWakeUpTask"/>
+      <object id="StandUp"/>
       <object id="TapXYTask"/>
-      <object id="WaitForBodyClose"/>
       <object id="CloseTask"/>
-      <object id="FallTask"/>
+      <object id="SitDown"/>
+      <object id="GoIntoBed"/>
       <object id="SwitchLightTask"/>
+      <object id="BLeaveTask"/>
+      <object id="BGetUpFromBed"/>
+      <object id="SwipeTask"/>
+      <object id="DropObj"/>
+      <object id="PutOnTask"/>
+      <object id="WaitForBodyClose"/>
+      <object id="PlayAnimationTask"/>
+      <object id="FallTask"/>
+      <object id="Eat"/>
+      <object id="BUseTask"/>
       <object id="FTaskSelectorFilter"/>
+      <object id="FChangeTargetObjFilter"/>
+      <object id="FModifyPlaceFilter"/>
+      <object id="FChangeToolFilter"/>
       <object id="FReplaceTaskFilter"/>
+      <object id="FDelayFilter"/>
       <object id="FUnableFilter"/>
       <object id="FChangeTargetObjFilter"/>
       <object id="FModifyPlaceFilter"/>
@@ -13511,58 +13756,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <role id="DeviceLocationtarget">
@@ -13979,58 +14224,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="AnotherActionHappens" inherits="NormHoldingCondition"
@@ -14039,7 +14284,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
     <recommendation/>
     <properties>
       <property id="AffectedAction" iscollection=""
-        ismetaclassinstance="yes" preferredwidget="" type="BTask">
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="BTask">
         <label lang="en">Description</label>
       </property>
       <property id="Description"
@@ -14053,7 +14299,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <label lang="en">Description</label>
       </property>
       <property id="ActionResponsible" iscollection=""
-        ismetaclassinstance="yes" preferredwidget="" type="Human">
+        ismetaclassinstance="yes"
+        preferredwidget="ingenias.editor.widget.CustomJTextField" type="Human">
         <label lang="en">Description</label>
       </property>
       <preferredorder>
@@ -15326,58 +15573,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="FallTask" inherits="BSimpleTask" instanciable="yes"
@@ -15574,58 +15821,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <role id="SActivityNodetarget">
@@ -16076,15 +16323,31 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="PlaceParam"/>
       <object id="WearableParam"/>
       <object id="GoToBodyLoc"/>
-      <object id="DropObj"/>
+      <object id="TakeOffTask"/>
+      <object id="WaitTask"/>
+      <object id="BPickUpTask"/>
+      <object id="FallSleep"/>
       <object id="OpenTask"/>
+      <object id="Drink"/>
       <object id="BGoToTask"/>
       <object id="SayTask"/>
+      <object id="BWakeUpTask"/>
+      <object id="StandUp"/>
       <object id="TapXYTask"/>
-      <object id="WaitForBodyClose"/>
       <object id="CloseTask"/>
-      <object id="FallTask"/>
+      <object id="SitDown"/>
+      <object id="GoIntoBed"/>
       <object id="SwitchLightTask"/>
+      <object id="BLeaveTask"/>
+      <object id="BGetUpFromBed"/>
+      <object id="SwipeTask"/>
+      <object id="DropObj"/>
+      <object id="PutOnTask"/>
+      <object id="WaitForBodyClose"/>
+      <object id="PlayAnimationTask"/>
+      <object id="FallTask"/>
+      <object id="Eat"/>
+      <object id="BUseTask"/>
       <object id="BEvent"/>
       <object id="TakeOffTask"/>
       <object id="WaitTask"/>
@@ -16111,58 +16374,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="Lift" inherits="SVerticalSpace" instanciable="yes"
@@ -16490,58 +16753,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="MessageListenedEvent" inherits="PerceptionEvent"
@@ -16622,7 +16885,11 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
   </object>
   <object id="CSymptom" inherits="Condition" instanciable="yes"
     keyfield="id" package="" type="ingenias.editor.entities.MetaObject">
-    <description/>
+    <description>
+Checks the level of a symptom.
+
+- **PDSymptomTypeField:** Symptom name
+- **IntensityLevelField:** Level of the symptom</description>
     <recommendation/>
     <properties>
       <property id="Description"
@@ -17830,58 +18097,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="FSeat" inherits="EMobileFurniture" instanciable="no"
@@ -18035,58 +18302,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="Trousers" inherits="EClothing" instanciable="yes"
@@ -18314,8 +18581,43 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="Human"/>
       <object id="SArea"/>
       <object id="SBuilding"/>
+      <object id="SLivingroom"/>
+      <object id="SKitchen"/>
+      <object id="SBedroom"/>
       <object id="SFloor"/>
+      <object id="SBathroom"/>
+      <object id="Lift"/>
+      <object id="Staircase"/>
+      <object id="SCorridor"/>
       <object id="ConsecutiveActions"/>
+      <object id="GoToBodyLoc"/>
+      <object id="TakeOffTask"/>
+      <object id="WaitTask"/>
+      <object id="BPickUpTask"/>
+      <object id="FallSleep"/>
+      <object id="OpenTask"/>
+      <object id="Drink"/>
+      <object id="BGoToTask"/>
+      <object id="SayTask"/>
+      <object id="BWakeUpTask"/>
+      <object id="StandUp"/>
+      <object id="TapXYTask"/>
+      <object id="CloseTask"/>
+      <object id="BSequentialTask"/>
+      <object id="SitDown"/>
+      <object id="GoIntoBed"/>
+      <object id="SwitchLightTask"/>
+      <object id="BLeaveTask"/>
+      <object id="BGetUpFromBed"/>
+      <object id="SwipeTask"/>
+      <object id="BRandomTask"/>
+      <object id="DropObj"/>
+      <object id="PutOnTask"/>
+      <object id="WaitForBodyClose"/>
+      <object id="PlayAnimationTask"/>
+      <object id="FallTask"/>
+      <object id="Eat"/>
+      <object id="BUseTask"/>
     </objects>
     <relationships>
       <relationship id="ProducesEvent"/>
@@ -18323,58 +18625,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <object id="SociAALEntity" instanciable="no" keyfield="id" package="">
@@ -18580,15 +18882,31 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="PlaceParam"/>
       <object id="WearableParam"/>
       <object id="GoToBodyLoc"/>
-      <object id="DropObj"/>
+      <object id="TakeOffTask"/>
+      <object id="WaitTask"/>
+      <object id="BPickUpTask"/>
+      <object id="FallSleep"/>
       <object id="OpenTask"/>
+      <object id="Drink"/>
       <object id="BGoToTask"/>
       <object id="SayTask"/>
+      <object id="BWakeUpTask"/>
+      <object id="StandUp"/>
       <object id="TapXYTask"/>
-      <object id="WaitForBodyClose"/>
       <object id="CloseTask"/>
-      <object id="FallTask"/>
+      <object id="SitDown"/>
+      <object id="GoIntoBed"/>
       <object id="SwitchLightTask"/>
+      <object id="BLeaveTask"/>
+      <object id="BGetUpFromBed"/>
+      <object id="SwipeTask"/>
+      <object id="DropObj"/>
+      <object id="PutOnTask"/>
+      <object id="WaitForBodyClose"/>
+      <object id="PlayAnimationTask"/>
+      <object id="FallTask"/>
+      <object id="Eat"/>
+      <object id="BUseTask"/>
       <object id="BEvent"/>
       <object id="TakeOffTask"/>
       <object id="WaitTask"/>
@@ -18616,58 +18934,58 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <relationship id="ProfileOf"/>
       <relationship id="TIStartTime"/>
       <relationship id="med"/>
+      <relationship id="socialRelations"/>
       <relationship id="WorkAs"/>
       <relationship id="LiveIn"/>
-      <relationship id="socialRelations"/>
-      <relationship id="ConditionNeeded"/>
       <relationship id="RelatedEvent"/>
       <relationship id="ActivityAttached"/>
+      <relationship id="ConditionNeeded"/>
       <relationship id="Connects"/>
       <relationship id="SBhasFloor"/>
+      <relationship id="tool"/>
       <relationship id="FPrecondition"/>
       <relationship id="AllowedTask"/>
-      <relationship id="tool"/>
       <relationship id="relatedCondition"/>
-      <relationship id="aeas_op1"/>
-      <relationship id="aemd_op2"/>
-      <relationship id="aemd_op1"/>
       <relationship id="aeinv_op"/>
+      <relationship id="aemd_op2"/>
       <relationship id="aeas_op2"/>
+      <relationship id="aeas_op1"/>
+      <relationship id="aemd_op1"/>
+      <relationship id="RelatedHuman"/>
+      <relationship id="InitialLocation"/>
+      <relationship id="InitialActivity"/>
       <relationship id="InitialDate"/>
       <relationship id="device"/>
-      <relationship id="RelatedHuman"/>
-      <relationship id="InitialActivity"/>
-      <relationship id="InitialLocation"/>
       <relationship id="CameraFaceToHuman"/>
-      <relationship id="InitializesSymptom"/>
       <relationship id="InitializedSymptom"/>
-      <relationship id="DeonticAssignement"/>
+      <relationship id="InitializesSymptom"/>
       <relationship id="Role"/>
-      <relationship id="AffectedAction"/>
-      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="DeonticAssignement"/>
       <relationship id="ActionResponsible"/>
+      <relationship id="ActionHappeningAfterwards"/>
+      <relationship id="AffectedAction"/>
+      <relationship id="goToBodySpeedVar"/>
+      <relationship id="leaveObjVar"/>
+      <relationship id="closeObjVar"/>
+      <relationship id="pickUpObjVar"/>
+      <relationship id="waitForHumanVar"/>
+      <relationship id="durationVar"/>
+      <relationship id="goToSpeedVar"/>
       <relationship id="messageVar"/>
       <relationship id="tapXVar"/>
       <relationship id="sitDownOnSeatVar"/>
-      <relationship id="tapDeviceVar"/>
-      <relationship id="animVar"/>
-      <relationship id="pickUpObjVar"/>
-      <relationship id="durationVar"/>
-      <relationship id="waitForHumanVar"/>
-      <relationship id="openObjVar"/>
       <relationship id="putOnWearableVar"/>
+      <relationship id="goToPlaceVar"/>
+      <relationship id="tapDeviceVar"/>
+      <relationship id="openObjVar"/>
+      <relationship id="animVar"/>
+      <relationship id="useObjVar"/>
       <relationship id="goToBodyVar"/>
-      <relationship id="leaveObjVar"/>
-      <relationship id="goToSpeedVar"/>
-      <relationship id="goToBodySpeedVar"/>
-      <relationship id="closeObjVar"/>
+      <relationship id="leaveObjDestinyVar"/>
       <relationship id="tapYVar"/>
       <relationship id="switchRoomVar"/>
-      <relationship id="leaveObjDestinyVar"/>
       <relationship id="putOffWearableVar"/>
       <relationship id="dropObjVar"/>
-      <relationship id="goToPlaceVar"/>
-      <relationship id="useObjVar"/>
     </relationships>
   </metamodel>
   <role id="AndroidDeviceInitializationtarget">
