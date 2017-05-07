@@ -3578,7 +3578,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
     <objects>
       <object id="IsThingInRoomCondition"/>
       <object id="CReceiveHelp"/>
-      <object id="NotCondition"/>
       <object id="CAlways"/>
       <object id="CSymptom"/>
       <object id="CTimer"/>
@@ -5257,13 +5256,11 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <label lang="en">Description</label>
       </property>
       <property id="HoldingCondition" iscollection=""
-        ismetaclassinstance="yes"
-        preferredwidget="ingenias.editor.widget.CustomJTextField" type="NormHoldingCondition">
+        ismetaclassinstance="yes" preferredwidget="" type="NormHoldingCondition">
         <label lang="en">Description</label>
       </property>
       <property id="DeonticAssignement" iscollection=""
-        ismetaclassinstance="yes"
-        preferredwidget="ingenias.editor.widget.CustomJTextField" type="BTask">
+        ismetaclassinstance="yes" preferredwidget="" type="BTask">
         <label lang="en">Description</label>
       </property>
       <property id="Deontic"
@@ -5740,8 +5737,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <label lang="en">Description</label>
       </property>
       <property id="ActionHappeningAfterwards" iscollection=""
-        ismetaclassinstance="yes"
-        preferredwidget="ingenias.editor.widget.CustomJTextField" type="AnotherActionHappens">
+        ismetaclassinstance="yes" preferredwidget="" type="AnotherActionHappens">
         <label lang="en">Description</label>
       </property>
       <preferredorder>
@@ -8667,7 +8663,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
     <objects>
       <object id="IsThingInRoomCondition"/>
       <object id="CReceiveHelp"/>
-      <object id="NotCondition"/>
       <object id="CAlways"/>
       <object id="CSymptom"/>
       <object id="CTimer"/>
@@ -13675,7 +13670,6 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
     <objects>
       <object id="IsThingInRoomCondition"/>
       <object id="CReceiveHelp"/>
-      <object id="NotCondition"/>
       <object id="CAlways"/>
       <object id="CSymptom"/>
       <object id="CTimer"/>
@@ -13693,38 +13687,19 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="CDayOfTheWeek"/>
       <object id="NotCondition"/>
       <object id="CSymptom"/>
+      <object id="SwipeTask"/>
       <object id="GoToBodyLoc"/>
-      <object id="TakeOffTask"/>
-      <object id="WaitTask"/>
-      <object id="BPickUpTask"/>
-      <object id="FallSleep"/>
+      <object id="DropObj"/>
       <object id="OpenTask"/>
-      <object id="Drink"/>
       <object id="BGoToTask"/>
       <object id="SayTask"/>
-      <object id="BWakeUpTask"/>
-      <object id="StandUp"/>
       <object id="TapXYTask"/>
-      <object id="CloseTask"/>
-      <object id="SitDown"/>
-      <object id="GoIntoBed"/>
-      <object id="SwitchLightTask"/>
-      <object id="BLeaveTask"/>
-      <object id="BGetUpFromBed"/>
-      <object id="SwipeTask"/>
-      <object id="DropObj"/>
-      <object id="PutOnTask"/>
       <object id="WaitForBodyClose"/>
-      <object id="PlayAnimationTask"/>
+      <object id="CloseTask"/>
       <object id="FallTask"/>
-      <object id="Eat"/>
-      <object id="BUseTask"/>
+      <object id="SwitchLightTask"/>
       <object id="FTaskSelectorFilter"/>
-      <object id="FChangeTargetObjFilter"/>
-      <object id="FModifyPlaceFilter"/>
-      <object id="FChangeToolFilter"/>
       <object id="FReplaceTaskFilter"/>
-      <object id="FDelayFilter"/>
       <object id="FUnableFilter"/>
       <object id="FChangeTargetObjFilter"/>
       <object id="FModifyPlaceFilter"/>
@@ -14284,8 +14259,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
     <recommendation/>
     <properties>
       <property id="AffectedAction" iscollection=""
-        ismetaclassinstance="yes"
-        preferredwidget="ingenias.editor.widget.CustomJTextField" type="BTask">
+        ismetaclassinstance="yes" preferredwidget="" type="BTask">
         <label lang="en">Description</label>
       </property>
       <property id="Description"
@@ -14299,8 +14273,7 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
         <label lang="en">Description</label>
       </property>
       <property id="ActionResponsible" iscollection=""
-        ismetaclassinstance="yes"
-        preferredwidget="ingenias.editor.widget.CustomJTextField" type="Human">
+        ismetaclassinstance="yes" preferredwidget="" type="Human">
         <label lang="en">Description</label>
       </property>
       <preferredorder>
@@ -15557,8 +15530,8 @@ this.getModel().addGraphModelListener(new ChangeNARYEdgeLocation(this));
 this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ]]></code>
     <objects>
-      <object id="Doorbell"/>
       <object id="ESmartPhone"/>
+      <object id="Doorbell"/>
       <object id="ERemoteControl"/>
       <object id="Dishwasher"/>
       <object id="WashMachine"/>
@@ -16322,32 +16295,17 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="PrimitiveParam"/>
       <object id="PlaceParam"/>
       <object id="WearableParam"/>
+      <object id="SwipeTask"/>
       <object id="GoToBodyLoc"/>
-      <object id="TakeOffTask"/>
-      <object id="WaitTask"/>
-      <object id="BPickUpTask"/>
-      <object id="FallSleep"/>
+      <object id="DropObj"/>
       <object id="OpenTask"/>
-      <object id="Drink"/>
       <object id="BGoToTask"/>
       <object id="SayTask"/>
-      <object id="BWakeUpTask"/>
-      <object id="StandUp"/>
       <object id="TapXYTask"/>
-      <object id="CloseTask"/>
-      <object id="SitDown"/>
-      <object id="GoIntoBed"/>
-      <object id="SwitchLightTask"/>
-      <object id="BLeaveTask"/>
-      <object id="BGetUpFromBed"/>
-      <object id="SwipeTask"/>
-      <object id="DropObj"/>
-      <object id="PutOnTask"/>
       <object id="WaitForBodyClose"/>
-      <object id="PlayAnimationTask"/>
+      <object id="CloseTask"/>
       <object id="FallTask"/>
-      <object id="Eat"/>
-      <object id="BUseTask"/>
+      <object id="SwitchLightTask"/>
       <object id="BEvent"/>
       <object id="TakeOffTask"/>
       <object id="WaitTask"/>
@@ -18581,43 +18539,8 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="Human"/>
       <object id="SArea"/>
       <object id="SBuilding"/>
-      <object id="SLivingroom"/>
-      <object id="SKitchen"/>
-      <object id="SBedroom"/>
       <object id="SFloor"/>
-      <object id="SBathroom"/>
-      <object id="Lift"/>
-      <object id="Staircase"/>
-      <object id="SCorridor"/>
       <object id="ConsecutiveActions"/>
-      <object id="GoToBodyLoc"/>
-      <object id="TakeOffTask"/>
-      <object id="WaitTask"/>
-      <object id="BPickUpTask"/>
-      <object id="FallSleep"/>
-      <object id="OpenTask"/>
-      <object id="Drink"/>
-      <object id="BGoToTask"/>
-      <object id="SayTask"/>
-      <object id="BWakeUpTask"/>
-      <object id="StandUp"/>
-      <object id="TapXYTask"/>
-      <object id="CloseTask"/>
-      <object id="BSequentialTask"/>
-      <object id="SitDown"/>
-      <object id="GoIntoBed"/>
-      <object id="SwitchLightTask"/>
-      <object id="BLeaveTask"/>
-      <object id="BGetUpFromBed"/>
-      <object id="SwipeTask"/>
-      <object id="BRandomTask"/>
-      <object id="DropObj"/>
-      <object id="PutOnTask"/>
-      <object id="WaitForBodyClose"/>
-      <object id="PlayAnimationTask"/>
-      <object id="FallTask"/>
-      <object id="Eat"/>
-      <object id="BUseTask"/>
     </objects>
     <relationships>
       <relationship id="ProducesEvent"/>
@@ -18881,32 +18804,17 @@ this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
       <object id="PrimitiveParam"/>
       <object id="PlaceParam"/>
       <object id="WearableParam"/>
+      <object id="SwipeTask"/>
       <object id="GoToBodyLoc"/>
-      <object id="TakeOffTask"/>
-      <object id="WaitTask"/>
-      <object id="BPickUpTask"/>
-      <object id="FallSleep"/>
+      <object id="DropObj"/>
       <object id="OpenTask"/>
-      <object id="Drink"/>
       <object id="BGoToTask"/>
       <object id="SayTask"/>
-      <object id="BWakeUpTask"/>
-      <object id="StandUp"/>
       <object id="TapXYTask"/>
-      <object id="CloseTask"/>
-      <object id="SitDown"/>
-      <object id="GoIntoBed"/>
-      <object id="SwitchLightTask"/>
-      <object id="BLeaveTask"/>
-      <object id="BGetUpFromBed"/>
-      <object id="SwipeTask"/>
-      <object id="DropObj"/>
-      <object id="PutOnTask"/>
       <object id="WaitForBodyClose"/>
-      <object id="PlayAnimationTask"/>
+      <object id="CloseTask"/>
       <object id="FallTask"/>
-      <object id="Eat"/>
-      <object id="BUseTask"/>
+      <object id="SwitchLightTask"/>
       <object id="BEvent"/>
       <object id="TakeOffTask"/>
       <object id="WaitTask"/>
