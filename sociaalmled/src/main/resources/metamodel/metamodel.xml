@@ -15557,8 +15557,8 @@ this.getModel().addGraphModelListener(new ChangeNARYEdgeLocation(this));
 this.getModel().addGraphModelListener(new ChangeEntityLocation(this));
 ]]></code>
     <objects>
-      <object id="Doorbell"/>
       <object id="ESmartPhone"/>
+      <object id="Doorbell"/>
       <object id="ERemoteControl"/>
       <object id="Dishwasher"/>
       <object id="WashMachine"/>
