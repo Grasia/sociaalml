@@ -1,8 +1,8 @@
-To run this program, please execute the file sociaalmled-1.0.8-SNAPSHOT-selfcontained. 
+To run this program, please execute the file sociaalmled-1.0.8-selfcontained. 
 
 This can be done either from your file explorer or from command line with:
 
-java -jar sociaalmled-1.0.8-SNAPSHOT-selfcontained
+java -jar sociaalmled-1.0.8-selfcontained
 
 The editor was made using the INGENME framework which is a tool developed for the INGENIAS mehodology
 
