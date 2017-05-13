@@ -9,7 +9,7 @@
   <groupId>net.sf.sociaal</groupId>
   <artifactId>sociaalml</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.8-SNAPSHOT</version>
+  <version>1.0.8</version>
   <name>SociAALML</name>
   <description>Model Driven Development of Software with social requirements</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
@@ -24,6 +24,7 @@
         <connection>scm:git:git://github.com/GRASIA/sociaalml.git</connection>
         <developerConnection>scm:git:git@github.com:GRASIA/sociaalml.git</developerConnection>
         <url>https://github.com/Grasia/sociaalml</url>		
+    <tag>sociaalml-1.0.8</tag>
   </scm>
   <developers>
     <developer>
