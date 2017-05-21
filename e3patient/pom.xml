@@ -42,13 +42,13 @@
       <groupId>net.sf.sociaal</groupId>
       <artifactId>sociaalmled</artifactId>
       <version>1.0.11-SNAPSHOT</version>
-      <!--scope>compile</scope>
+      <scope>compile</scope>
       <exclusions>
          <exclusion>
             <groupId>net.sf.ingenme</groupId>
             <artifactId>ingened</artifactId>
          </exclusion>
-      </exclusions-->
+      </exclusions>
     </dependency>
   </dependencies>
   

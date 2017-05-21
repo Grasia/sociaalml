@@ -24,7 +24,6 @@
         <connection>scm:git:git://github.com/GRASIA/sociaalml.git</connection>
         <developerConnection>scm:git:git@github.com:GRASIA/sociaalml.git</developerConnection>
         <url>https://github.com/Grasia/sociaalml</url>		
-    <tag>HEAD</tag>
   </scm>
   <developers>
     <developer>
@@ -47,16 +46,15 @@
 		<developername>Pablo Campillo-Sanchez</developername>
 		<developeremail>pabcampi@ucm.es</developeremail>
 		<!-- begin: izpack configuration -->
-		<ingenme.version>1.0.8</ingenme.version>
+		<ingenme.version>1.0.9-SNAPSHOT</ingenme.version>
 		<!-- end: izpack configuration -->
 	</properties>
 
   <modules>
-    <module>icons</module>
     <module>sociaalmled</module>
     <module>basicscenario</module>
     <module>e3patient</module>
-  <module>e9patient</module>
+    <module>e9patient</module>
   </modules>
   <profiles>
     <profile>
@@ -94,22 +92,15 @@
                 </site>
         </distributionManagement>
   <build>
-  <pluginManagement>
-    <plugins>
-      <plugin>
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.5.3</version>
-      </plugin>
-    </plugins>
-   </pluginManagement>
+
     <plugins>
       
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>1.7</source>
+          <target>1.7</target>
           <optimize>true</optimize>
           <showDeprecations>true</showDeprecations>
           <encoding>ISO-8859-1</encoding>
