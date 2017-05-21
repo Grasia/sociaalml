@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32px"
+   height="32px"
+   id="svg3041"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="MessageListenedEvent.svg">
+  <defs
+     id="defs3043" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="16.969491"
+     inkscape:cx="8.9734999"
+     inkscape:cy="16.488586"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1028"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3046">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <g
+       id="g2998">
+      <path
+         transform="translate(0.45050061,-0.40954601)"
+         d="m 30.388313,16.437252 a 14.825565,14.825565 0 1 1 -29.65113038,0 14.825565,14.825565 0 1 1 29.65113038,0 z"
+         sodipodi:ry="14.825565"
+         sodipodi:rx="14.825565"
+         sodipodi:cy="16.437252"
+         sodipodi:cx="15.562748"
+         id="path3769"
+         style="fill:none;stroke:#ff0000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3771"
+         y="6.8129201"
+         x="0.53241009"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:8px"
+           y="6.8129201"
+           x="0.53241009"
+           id="tspan3773"
+           sodipodi:role="line">E</tspan></text>
+    </g>
+    <g
+       id="g4175"
+       transform="matrix(0.68927403,0,0,0.68927403,-19.725465,2.3369738)">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path2993"
+         d="m 34.956463,19.106564 c 0,0 0.819092,2.375366 0,4.423096"
+         style="fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path2997"
+         d="m 37.249921,15.994014 c 0,0 1.720093,4.750733 0,11.22156"
+         style="fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path2999"
+         d="m 39.625288,12.963374 c 0,0 4.259278,5.979372 0,16.463749"
+         style="fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3001"
+         d="m 42.164473,9.3593687 c 0,0 4.996461,8.6823753 0,22.2793023"
+         style="fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(0.11943571,0,0,0.11943571,9.786749,5.9095554)"
+       id="g3">
+      <g
+         id="g5">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 142.395,29.698 C 134.832,13.343 119.853,4.97 108.356,2.595 80.638,-3.156 59.558,0.668 45.635,13.888 22.04,36.295 27.995,77.145 28.263,78.871 c 0.262,1.702 1.891,2.886 3.544,2.606 1.702,-0.262 2.874,-1.851 2.612,-3.547 C 34.356,77.537 28.708,38.539 49.943,18.393 62.301,6.678 81.537,3.417 107.083,8.7 c 10.011,2.07 23.054,9.365 29.643,23.617 8.312,17.991 4.213,43.014 -11.862,72.373 -4.39,8.031 -6.053,14.729 -7.788,21.83 -1.937,7.867 -4.11,16.781 -10.576,29.715 -3.824,7.654 -16.88,12.982 -29.771,12.1 -5.967,-0.396 -20.389,-2.881 -25.525,-17.714 -6.01,-10.54 -13.643,-29.849 -8.507,-36.772 2.962,-4 10.352,-3.288 15.908,-2.064 1.346,0.816 2.968,6.918 3.934,10.577 2.308,8.726 5.045,18.517 12.178,17.981 0.441,0.024 10.979,0.895 15.202,-6.242 3.337,-5.626 1.564,-13.761 -5.401,-24.801 5.45,-5.236 19.352,-20.441 12.775,-33.837 -2.046,-4.181 -8.659,-9.996 -17.007,-9.996 l -0.226,0 C 75.347,65.528 69.011,67.525 63.467,75.791 60.991,68.192 57.925,55.008 62.3,45.089 c 2.469,-5.611 6.936,-9.393 13.643,-11.542 4.99,-1.62 21.708,-3.212 31.438,5.824 7.928,7.344 9.772,20.134 5.498,38.03 -0.396,1.68 0.64,3.352 2.302,3.763 1.693,0.42 3.355,-0.646 3.77,-2.305 4.835,-20.24 2.381,-35.062 -7.313,-44.046 C 98.815,22.939 78.732,26.126 74.05,27.622 c -8.4,2.701 -14.273,7.739 -17.467,14.979 -7.624,17.278 3.038,40.91 3.504,41.899 0.505,1.111 1.617,1.82 2.832,1.82 1.215,0 2.326,-0.709 2.832,-1.814 3.809,-8.299 8.777,-12.72 14.386,-12.793 l 0.137,0 c 5.298,0 10.103,3.821 11.411,6.497 4.811,9.795 -7.934,23.684 -13.25,28.208 -1.206,1.022 -1.449,2.782 -0.569,4.098 8.662,12.909 7.907,18.322 6.68,20.399 -2.177,3.689 -9.204,3.215 -9.81,3.215 -2.612,-0.049 -4.826,-8.281 -6.18,-13.372 -1.976,-7.478 -3.69,-13.938 -8.455,-15.01 -10.89,-2.466 -18.438,-0.98 -22.408,4.391 -9.198,12.422 6.302,40.419 7.861,43.038 4.305,12.568 15.521,20.35 30.778,21.373 1.111,0.079 2.207,0.115 3.3,0.109 14.458,0 27.788,-6.297 32.458,-15.637 6.776,-13.566 9.048,-22.835 11.058,-31.019 1.705,-6.978 3.19,-13.007 7.197,-20.325 17.298,-31.595 21.354,-57.834 12.05,-77.98 z"
+           id="path7" />
+      </g>
+    </g>
+  </g>
+</svg>
