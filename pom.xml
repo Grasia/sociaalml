@@ -46,7 +46,7 @@
 		<developername>Pablo Campillo-Sanchez</developername>
 		<developeremail>pabcampi@ucm.es</developeremail>
 		<!-- begin: izpack configuration -->
-		<ingenme.version>1.0.9-SNAPSHOT</ingenme.version>
+		<ingenme.version>1.0.8</ingenme.version>
 		<!-- end: izpack configuration -->
 	</properties>
 
