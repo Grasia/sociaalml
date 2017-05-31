@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <parent>
-    <groupId>org.sonatype.oss</groupId>
-    <artifactId>oss-parent</artifactId>
-    <version>7</version>
-  </parent>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>net.sf.sociaal</groupId>
-  <artifactId>sociaalml</artifactId>
-  <packaging>pom</packaging>
-  <version>1.0.11-SNAPSHOT</version>
-  <name>SociAALML</name>
-  <description>Model Driven Development of Software with social requirements</description>
-  <url>http://grasia.fdi.ucm.es/sociaal</url>
-  <licenses>
-    <license>
-      <name>The GPL V3</name>
-      <url>http://www.gnu.org/copyleft/gpl.html</url>
-      <distribution />
-    </license>
-  </licenses>
-  <scm>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.sf.sociaal</groupId>
+    <artifactId>sociaalml</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.11-SNAPSHOT</version>
+    <name>SociAALML</name>
+    <description>Model Driven Development of Software with social requirements</description>
+    <url>http://grasia.fdi.ucm.es/sociaal</url>
+    <licenses>
+        <license>
+            <name>The GPL V3</name>
+            <url>http://www.gnu.org/copyleft/gpl.html</url>
+            <distribution/>
+        </license>
+    </licenses>
+    <scm>
         <connection>scm:git:git://github.com/GRASIA/sociaalml.git</connection>
         <developerConnection>scm:git:git@github.com:GRASIA/sociaalml.git</developerConnection>
-        <url>https://github.com/Grasia/sociaalml</url>		
-  </scm>
-  <developers>
-    <developer>
-      <id>pcampillo</id>
-      <name>Pablo Campillo-Sanchez</name>
-      <email>pabcampi@ucm.es</email>
-    </developer>
-    <developer>
-      <id>escalope</id>
-      <name>Jorge Gomez-Sanz</name>
-      <email>jjgomez@fdi.ucm.es</email>
-    </developer>
-  </developers>
+        <url>https://github.com/Grasia/sociaalml</url>
+    </scm>
+    <developers>
+        <developer>
+            <id>pcampillo</id>
+            <name>Pablo Campillo-Sanchez</name>
+            <email>pabcampi@ucm.es</email>
+        </developer>
+        <developer>
+            <id>escalope</id>
+            <name>Jorge Gomez-Sanz</name>
+            <email>jjgomez@fdi.ucm.es</email>
+        </developer>
+        <developer>
+            <id>marlonca</id>
+            <name>Marlon Cardenas</name>
+            <email>marlonca@ucm.es</email>
+        </developer>
+    </developers>
     <properties>
-		<vendor>GRASIA Research Group</vendor>
-		<!-- maven does not allow to refer to developers property defined at the 
-			beginning -->
-		<!-- an echoproperties task shows there is no accesible project.developers 
-			property -->
-		<developername>Pablo Campillo-Sanchez</developername>
-		<developeremail>pabcampi@ucm.es</developeremail>
-		<!-- begin: izpack configuration -->
-		<ingenme.version>1.0.8</ingenme.version>
-		<!-- end: izpack configuration -->
-	</properties>
-
-  <modules>
-    <module>sociaalmled</module>
-    <module>basicscenario</module>
-    <module>e3patient</module>
-    <module>e9patient</module>
-  </modules>
-  <profiles>
-    <profile>
-      <id>release-sign-artifacts</id>
-      <activation>
-        <property>
-          <name>performRelease</name>
-          <value>true</value>
-        </property>
-      </activation>
-      <build>
+        <vendor>GRASIA Research Group</vendor>
+        <!-- maven does not allow to refer to developers property defined at the
+            beginning -->
+        <!-- an echoproperties task shows there is no accesible project.developers
+            property -->
+        <developername>Pablo Campillo-Sanchez</developername>
+        <developeremail>pabcampi@ucm.es</developeremail>
+        <!-- begin: izpack configuration -->
+        <ingenme.version>1.0.8</ingenme.version>
+        <!-- end: izpack configuration -->
+    </properties>
+    <modules>
+        <module>sociaalmled</module>
+        <module>basicscenario</module>
+        <module>e3patient</module>
+        <module>e9patient</module>
+    </modules>
+    <profiles>
+        <profile>
+            <id>release-sign-artifacts</id>
+            <activation>
+                <property>
+                    <name>performRelease</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.1</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+    <distributionManagement>
+        <site>
+            <id>website</id>
+            <url>file:target/finalsite</url>
+        </site>
+    </distributionManagement>
+    <build>
         <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.1</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <optimize>true</optimize>
+                    <!--<showDeprecations>true</showDeprecations>-->
+                    <encoding>ISO-8859-1</encoding>
+                </configuration>
+            </plugin>
         </plugins>
-      </build>
-    </profile>
-  </profiles>
-   <distributionManagement>
-                <site>
-                        <id>website</id>
-                        <url>file:target/finalsite</url>
-                </site>
-        </distributionManagement>
-  <build>
-
-    <plugins>
-      
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
-          <optimize>true</optimize>
-          <showDeprecations>true</showDeprecations>
-          <encoding>ISO-8859-1</encoding>
-        </configuration>
-      </plugin>
-
-  
-    </plugins>
-  </build>
-
+    </build>
 </project>

@@ -31,27 +31,31 @@
 			<name>Jorge Gomez-Sanz</name>
 			<email>jjgomez@fdi.ucm.es</email>
 		</developer>
+		<developer>
+            		<id>marlonca</id>
+		    <name>Marlon Cardenas</name>
+		    <email>marlonca@ucm.es</email>
+		</developer>
 	</developers>
 	<dependencies>
-		<dependency>
-                  <groupId>org.apache.maven.doxia</groupId>
-                  <artifactId>doxia-module-markdown</artifactId>
-                  <version>1.5</version>
-                </dependency>
-		<dependency>
-			<groupId>net.sf.ingenme</groupId>
-			<artifactId>ingened</artifactId>
-			<version>${ingenme.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.ingenme</groupId>
-			<artifactId>core</artifactId>
-			<version>${ingenme.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		
-	</dependencies>
+        <dependency>
+            <groupId>net.sf.ingenme</groupId>
+            <artifactId>core</artifactId>
+            <version>${ingenme.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.ingenme</groupId>
+            <artifactId>ingened</artifactId>
+            <version>${ingenme.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.doxia</groupId>
+            <artifactId>doxia-module-markdown</artifactId>
+            <version>1.5</version>
+        </dependency>
+    </dependencies>
 	<profiles>
 		<profile>
 			<id>release-sign-artifacts</id>
@@ -79,6 +83,26 @@
 					</plugin>
 				</plugins>
 			</build>
+		</profile>
+		<!-- ********************************** -->
+		<!-- Javadoc disabled for Class Edit    -->
+		<!-- ********************************** -->
+		<profile>
+		    <id>doclint-java8-disable</id>
+		    <activation>
+		        <jdk>[1.8,)</jdk>
+		    </activation>
+		    <build>
+		        <plugins>
+		            <plugin>
+		                <groupId>org.apache.maven.plugins</groupId>
+		                <artifactId>maven-javadoc-plugin</artifactId>
+		                <configuration>
+		                    <additionalparam>-Xdoclint:none</additionalparam>
+		                </configuration>
+		            </plugin>
+		        </plugins>
+		    </build>
 		</profile>
 	</profiles>
 	<!--reporting>
