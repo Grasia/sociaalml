@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
@@ -9,7 +10,7 @@
     <groupId>net.sf.sociaal</groupId>
     <artifactId>sociaalml</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.11</version>
+    <version>1.0.11-SNAPSHOT</version>
     <name>SociAALML</name>
     <description>Model Driven Development of Software with social requirements</description>
     <url>http://grasia.fdi.ucm.es/sociaal</url>
@@ -17,7 +18,7 @@
         <license>
             <name>The GPL V3</name>
             <url>http://www.gnu.org/copyleft/gpl.html</url>
-            <distribution />
+            <distribution/>
         </license>
     </licenses>
     <scm>
